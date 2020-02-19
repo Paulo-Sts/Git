@@ -30,3 +30,5 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
   ° NEXT
   ° INSTALL
   ° FINISH
+# Versão do Git
+git --version
