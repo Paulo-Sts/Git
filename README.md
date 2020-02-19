@@ -15,8 +15,8 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
 É um repositório online centralizado, onde pode-se salvar os arquivos e suas versões com o git, compartilhar esses arquivos e trabalhar coletivamente neles.
 
 # Instalação do git
-° Baixar o Git em: https://git-scm.com/ \n
-° Após abrir o instalador: \n
+° Baixar o Git em: https://git-scm.com/ 
+° Após abrir o instalador: 
   ° NEXT
   ° Escolher onde será a pasta de instalação --> NEXT
   ° Escolher que componentes devem ser instalados --> NEXT
