@@ -29,3 +29,4 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
   ° NEXT
   ° NEXT
   ° INSTALL
+  ° FINISH
