@@ -32,3 +32,28 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
   - FINISH
 # Versão do Git
 * git --version
+
+# Comandos Iniciais
+
+  - Configurar Usuário
+    * git config --global user.name "nome"
+    * git config --global user.email "email"
+ 
+  - Inicializar Repositório
+    * git init
+  
+  - Estado do Arquivo
+    * git status
+    
+  - Adicionar Arquivo ao Git
+    * git add "nome do arquivo"
+    * git add . ou * (adiciona vários arquivos)
+    
+  - Gravar Alterações no Git
+    * git commit -m "mensagem" (grava e adiciona uma mensagem)
+  
+  - Ajuda do Git
+    * git help
+    * git help "nome do comando para saber sobre"
+    
+    
