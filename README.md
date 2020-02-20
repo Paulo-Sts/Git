@@ -15,20 +15,20 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
 É um repositório online centralizado, onde pode-se salvar os arquivos e suas versões com o git, compartilhar esses arquivos e trabalhar coletivamente neles.
 
 # Instalação do git
-° Baixar o Git em: https://git-scm.com/ 
-° Após abrir o instalador: 
-  ° NEXT
-  ° Escolher onde será a pasta de instalação --> NEXT
-  ° Escolher que componentes devem ser instalados --> NEXT
-  ° Escolher se deve criar uma pasta no menu iniciar para o git --> NEXT
-  ° Escolher qual editor integrar como padrão com o git --> NEXT
-  ° Escolher a path (usar o recomendado) --> NEXT
-  ° Escolher a biblioteca ssl (usar a recomendada) --> NEXT
-  ° Escolher a conversão de fim de linha (usar o recomendado) --> NEXT
-  ° Escolher qual o emulador será usado o terminal (usar o recomendado) --> NEXT
-  ° NEXT
-  ° NEXT
-  ° INSTALL
-  ° FINISH
+- Baixar o Git em: https://git-scm.com/ 
+- Após abrir o instalador: 
+  - NEXT
+  - Escolher onde será a pasta de instalação --> NEXT
+  - Escolher que componentes devem ser instalados --> NEXT
+  - Escolher se deve criar uma pasta no menu iniciar para o git --> NEXT
+  - Escolher qual editor integrar como padrão com o git --> NEXT
+  - Escolher a path (usar o recomendado) --> NEXT
+  - Escolher a biblioteca ssl (usar a recomendada) --> NEXT
+  - Escolher a conversão de fim de linha (usar o recomendado) --> NEXT
+  - Escolher qual o emulador será usado o terminal (usar o recomendado) --> NEXT
+  - NEXT
+  - NEXT
+  - INSTALL
+  - FINISH
 # Versão do Git
-git --version
+* git --version
