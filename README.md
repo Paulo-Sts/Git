@@ -55,5 +55,20 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
   - Ajuda do Git
     * git help
     * git help "nome do comando para saber sobre"
+
+# Repositórios
+
+Os arquivos de um projeto devem ser guardados em um repositório, para cada repositório de um projeto inicia-se o repositório do git, para guardar as versões de cada arquivo do projeto. O repositório será iniciado no git como o git init.
+
+# Histórico e Versões
+
+- Históricos de commits
+  * git log
+  * git log nome_arquivo (consulta um arquivo específico)
+  
+- Alterações detalhadas de arquivos
+  * git show (mostra as últimas alterações)
+  * git show nome_commit (mostra as alterações detalhadas de um arquivo
+  
     
     
