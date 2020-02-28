@@ -78,5 +78,6 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
   * git diff (mostra alterações em todos os arquivos)
   * git diff nome_arquivo (mostra alterações em um arquivo específico)
   
-  
-    
+# Apagar Arquivos
+- Apaga um Arquivo
+  * git rm nome_arquivo
