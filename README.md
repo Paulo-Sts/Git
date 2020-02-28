@@ -70,5 +70,13 @@ Os arquivos de um projeto devem ser guardados em um repositório, para cada repo
   * git show (mostra as últimas alterações)
   * git show nome_commit (mostra as alterações detalhadas de um arquivo
   
-    
+# Comparação de Alterações
+
+Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
+
+- Comparação de Alterações
+  * git diff (mostra alterações em todos os arquivos)
+  * git diff nome_arquivo (mostra alterações em um arquivo específico)
+  
+  
     
