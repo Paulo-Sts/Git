@@ -84,4 +84,5 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 
 # Reverter Commit
 - Reverte commit
-  * git 
+  * git revert nome do commit
+  * git revert head (revert o último commit)
