@@ -81,3 +81,7 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 # Apagar Arquivos
 - Apaga um Arquivo
   * git rm nome_arquivo
+
+# Reverter Commit
+- Reverte commit
+  * git 
