@@ -7,11 +7,11 @@ Aprendendo a usar o sistema de controle de versão Git.
 # Git
 É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O git salva uma imagem dos arquivos e suas mudanças em cada versão. O git foi desenvolvido por Linus Torvalds e lançado em 2005.
 
-# Sistema de Três Estados de Arquivo
-Um arquivo no git é dividido em estados. Estado modificado(ainda não está salvo no git), estado preparado(adicionado ao git para ser versionado) e estado consolidado(versão do arquivo salva no git).
-
 # Github
 É um repositório online centralizado, onde pode-se salvar os arquivos e suas versões com o git, compartilhar esses arquivos e trabalhar coletivamente neles.
+
+# Sistema de Três Estados de Arquivo
+Um arquivo no git é dividido em estados. Estado modificado(ainda não está salvo no git), estado preparado(adicionado ao git para ser versionado) e estado consolidado(versão do arquivo salva no git).
 
 # Instalação do git
 - Baixar o Git em: https://git-scm.com/ 
