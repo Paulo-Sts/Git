@@ -1,15 +1,14 @@
 # Git-e-Github
-
-Aprendendo a usar o sistema de controle de versão
+Aprendendo a usar o sistema de controle de versão Git.
 
 # Sistema de Controle de Versão:
-É um sistema de gerenciamento de versões de arquivos, bem como de registro de mudanças, revisões, correções e compartilhamento. Com ele pode-se administrar as várias versões de um conjunto de arquivos.
+É um sistema que registra e guarda alterações de arquivos, gerenciando suas diversas versões ao longo do tempo.
 
-# Introdução ao Git
-É um sistema de controle de versão de arquivos, desenvolvido por Linus Torvalds e lançado em 2005.
+# Git
+É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O git salva uma imagem dos arquivos e suas mudanças em cada versão. O git foi desenvolvido por Linus Torvalds e lançado em 2005.
 
 # Sistema de Três Estados de Arquivo
-Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado de marcação da versão(preparado) e estado salvo no banco como uma versão(consolidado).
+Um arquivo no git é dividido em estados. Estado modificado(ainda não está salvo no git), estado preparado(adicionado ao git para ser versionado) e estado consolidado(versão do arquivo salva no git).
 
 # Github
 É um repositório online centralizado, onde pode-se salvar os arquivos e suas versões com o git, compartilhar esses arquivos e trabalhar coletivamente neles.
@@ -39,7 +38,7 @@ Um arquivo no git é dividido em estados. Estado de trabalho(modificado), estado
     * git config --global user.name "nome"
     * git config --global user.email "email"
  
-  - Inicializar Repositório
+  - Inicializar o git em um repositório
     * git init
   
   - Estado do Arquivo
