@@ -56,7 +56,6 @@ Um arquivo no git é dividido em estados. Estado modificado(ainda não está sal
     * git help "nome do comando para saber sobre"
 
 # Repositórios
-
 Os arquivos de um projeto devem ser guardados em um repositório, para cada repositório de um projeto inicia-se o repositório do git, para guardar as versões de cada arquivo do projeto. O repositório será iniciado no git como o git init.
 
 # Histórico e Versões
@@ -70,7 +69,6 @@ Os arquivos de um projeto devem ser guardados em um repositório, para cada repo
   * git show nome_commit (mostra as alterações detalhadas de um arquivo
   
 # Comparação de Alterações
-
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
 - Comparação de Alterações
