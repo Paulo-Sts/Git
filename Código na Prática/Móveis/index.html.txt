@@ -22,5 +22,7 @@ setInterval(trocaBanner, 1000);
 <li>Móveis de latinhas de alumínio</li>
 <li>Móveis de papelão</li>
 </ul>
+nicio do arquivo -->
+<p>Móveis baratos pra ! !!</p>
 </body>
 </html>
