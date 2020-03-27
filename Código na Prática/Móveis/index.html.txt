@@ -5,7 +5,7 @@
 <meta name="description" content="Móveis ecológicos">
 <meta name="keywords" content="moveis ecologicos">
 <title>Móveis Ecológicos</title>
-script src="principal.js"></script>
+script src="js/principal.js"></script>
 <!-- início do arquivo ... -->
 
 <!-- tags meta ... -->
