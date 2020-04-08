@@ -29,6 +29,11 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### Controle de Versão Distribuído
   É um sistema em que cada usuário trabalha com uma cópia dos arquivos localmente, também gerencia as versões de modo independente. Ao mesmo tempo todos os usuários estão integrados ao repositório central externo que interage com as cópias de repositório de cada usuário.
 
+# Git
+
+#### //Introdução
+  É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O Git salva uma imagem dos arquivos com suas mudanças em cada versão.
+
 # Versão do Git
 * git --version
 
