@@ -87,7 +87,7 @@ Aprendendo a usar o sistema de controle de versão Git.
   * git help
 
 #### //Ignorar Arquivos
-  - Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
+  Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
   * .gitignore
 
 # Histórico e Versões
