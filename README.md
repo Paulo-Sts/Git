@@ -1,7 +1,7 @@
 # Git-e-Github
 Aprendendo a usar o sistema de controle de versão Git.
 
-#### //Instalação do git
+#### //Instalação do Git
 - Baixar o Git em: https://git-scm.com/ 
 - Após abrir o instalador: 
   - NEXT
@@ -62,10 +62,10 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Acessar Configurações do Usuário
   * git config --global configuração_desejada
 
-#### //Inicializar o git em um repositório
+#### //Inicializar o Git em Um repositório
   * git init
   
-#### //Criar Repositório e Inicializar o git 
+#### //Criar Repositório e Inicializar o Git 
   * git init nome_repositório
 
 #### //Acessar Estado do Arquivo
@@ -89,9 +89,6 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Ignorar Arquivos
   - Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
   * .gitignore
-
-# Repositórios
-Os arquivos de um projeto devem ser guardados em um repositório, para cada repositório de um projeto inicia-se o repositório do git, para guardar as versões de cada arquivo do projeto. O repositório será iniciado no git como o git init.
 
 # Histórico e Versões
 
