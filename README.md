@@ -45,31 +45,50 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Estado Consolidado
   Quando o arquivo é salvo como uma versão. Nesse estado o Git salva uma imagem daquele arquivo em seu banco de dados local.
 
-# Versão do Git
-* git --version
+# Primeiros Comandos
 
-# Comandos Iniciais
+#### //Versão do Git
+  * git --version
 
-  - Configurar Usuário
-    * git config --global user.name "nome"
-    * git config --global user.email "email"
- 
-  - Inicializar o git em um repositório
-    * git init
+#### //Configurar Nome do Usuário
+  * git config --global user.name "nome"
+
+#### //Configurar Email do Usuário
+  * git config --global user.email "email"
+
+#### //Configurar Editor de Texto do Usuário
+  * git config --global core.editor "editor"
+
+#### //Acessar Configurações do Usuário
+  * git config --global configuração_desejada
+
+#### //Inicializar o git em um repositório
+  * git init
   
-  - Estado do Arquivo
-    * git status
+#### //Criar Repositório e Inicializar o git 
+  * git init nome_repositório
+
+#### //Acessar Estado do Arquivo
+  * git status
     
-  - Adicionar Arquivo ao Git
-    * git add "nome do arquivo"
-    * git add . ou * (adiciona vários arquivos)
+#### //Adicionar Um Arquivo ao Git
+  * git add nome_arquivo
+
+#### //Adicionar Todos os Arquivos ao Git
+  * git add . 
     
-  - Gravar Alterações no Git
-    * git commit -m "mensagem" (grava e adiciona uma mensagem)
+#### //Salvar Arquivos no Git
+  * git commit -m "mensagem" 
   
-  - Ajuda do Git
-    * git help
-    * git help "nome do comando para saber sobre"
+#### //Adicionar e Salvar Arquivos no Git
+  * git commit -a -m "mensagem" 
+
+#### //Ajuda do Git
+  * git help
+
+#### //Ignorar Arquivos
+  - Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
+  * .gitignore
 
 # Repositórios
 Os arquivos de um projeto devem ser guardados em um repositório, para cada repositório de um projeto inicia-se o repositório do git, para guardar as versões de cada arquivo do projeto. O repositório será iniciado no git como o git init.
