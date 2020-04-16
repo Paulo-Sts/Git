@@ -1,5 +1,5 @@
 var banners =
-["Os melhores do Brasil!", "Qualidade e preço baixo!"];
+["Do lixo ao Luxo", "Reaproveitar é Aproveitar"];
 var bannerAtual = 0;
 function trocaBanner() {
 bannerAtual = (bannerAtual + 1) % 2;
