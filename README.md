@@ -143,3 +143,35 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 
 #### //Desfazer Alterações Commitadas Voltando ao Commit Anterior
   * git revert --no-edit código_do_commit_a_voltar
+
+# Repositórios Externos
+
+## Repositório Remoto
+É responsável por hospedar o versionamento, sendo o ponto de acesso dos usuários locais. Geralmente é usado como repositório central, não sendo acessado diretamente, mas funcionando como backup e repositório de integração do que está sendo trabalhado pelos usuários nos repositórios locais.
+
+#### //Criar Repositório Remoto
+  * git init --bare nome_repositório.git
+
+#### //Adicionar Repositório Remoto
+  * git remote add nome_repositório endereço_repositório
+
+#### //Listar Repositórios Remotos
+  * git remote
+
+#### //Listar Repositórios Remotos e Seus Endereços
+  * git remote -v
+
+#### //Renomear Repositório Remoto
+  * git remote rename nome_repositório novo_nome
+
+#### //Alterar o Endereço do Repositório Remoto
+  * git remote set-url nome_repositório novo_endereço
+
+#### //Enviar commits para o Repositório Remoto
+  * git push nome_repositório nome_branch
+
+#### //Clonar Repositório Remoto
+  * git clone endereço_repositório
+
+#### //Sincronizar Repositório Local com Repositório Remoto
+  * git pull nome_repositório nome_branch
