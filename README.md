@@ -2,21 +2,9 @@
 Aprendendo a usar o sistema de controle de versão Git.
 
 #### //Instalação do Git
-- Baixar o Git em: https://git-scm.com/ 
-- Após abrir o instalador: 
-  - NEXT
-  - Escolher onde será a pasta de instalação --> NEXT
-  - Escolher que componentes devem ser instalados --> NEXT
-  - Escolher se deve criar uma pasta no menu iniciar para o git --> NEXT
-  - Escolher qual editor integrar como padrão com o git --> NEXT
-  - Escolher a path (usar o recomendado) --> NEXT
-  - Escolher a biblioteca ssl (usar a recomendada) --> NEXT
-  - Escolher a conversão de fim de linha (usar o recomendado) --> NEXT
-  - Escolher qual o emulador será usado o terminal (usar o recomendado) --> NEXT
-  - NEXT
-  - NEXT
-  - INSTALL
-  - FINISH
+- Acessar o site do Git e escolher a versão mais atualizada disponível:
+  https://git-scm.com/ 
+- Após baixar, executar o instalador seguindo as opções padrão.
 
 # Sistema de Controle de Versão
 
@@ -45,10 +33,17 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Estado Consolidado
   Quando o arquivo é salvo como uma versão. Nesse estado o Git salva uma imagem daquele arquivo em seu banco de dados local.
 
-# Primeiros Comandos
+# Comandos Iniciais
+
+## Ajuda e Orientações
 
 #### //Versão do Git
   * git --version
+
+#### //Ajuda do Git
+  * git help
+
+## Configurações de Usuário
 
 #### //Configurar Nome do Usuário
   * git config --global user.name "nome"
@@ -62,11 +57,15 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Acessar Configurações do Usuário
   * git config --global configuração_desejada
 
+## Inicializar o Git
+
 #### //Inicializar o Git em Um repositório
   * git init
   
 #### //Criar Repositório e Inicializar o Git 
   * git init nome_repositório
+
+## Salvando no Repositório Git
 
 #### //Acessar Estado do Arquivo
   * git status
@@ -83,35 +82,64 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Adicionar e Salvar Arquivos no Git
   * git commit -a -m "mensagem" 
 
-#### //Ajuda do Git
-  * git help
 
-#### //Ignorar Arquivos
+## //Ignorar Arquivos
   Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
   * .gitignore
 
-# Histórico e Versões
+# Manipulação de Arquivos
 
-- Históricos de commits
+## Históricos de Arquivos Commitados
+
+#### //Histórico de Todos os Commits do Repositório
   * git log
+
+#### //Histórico de um Arquivo Específico
   * git log nome_arquivo (consulta um arquivo específico)
   
-- Alterações detalhadas de arquivos
+####  //Alterações Detalhadas de Arquivos
   * git show (mostra as últimas alterações)
-  * git show nome_commit (mostra as alterações detalhadas de um arquivo
-  
-# Comparação de Alterações
+  * git show nome_commit (mostra as alterações detalhadas de um arquivo)
+
+#### //Histórico dos últimos Arquivos do Repositório
+  * git log -n numero_de_commits_a_mostrar
+
+#### //Resumo do Histórico de Commits do Repositório
+  * git log --oneline 
+
+#### //Resumo das Alterações de Commits 
+  * git log --stat
+
+# Alterações nos Arquivos
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
-- Comparação de Alterações
+#### //Mudanças não Salvas no Git
   * git diff (mostra alterações em todos os arquivos)
   * git diff nome_arquivo (mostra alterações em um arquivo específico)
+
+#### //Mudanças não Commitadas 
+  * git diff --staged
+
+#### //Comparar Dois Commits de Um Arquivo
+  * git diff numero_commit_1 : numero_commit_2
   
-# Apagar Arquivos
-- Apaga um Arquivo
+#### //Apagar Arquivo
   * git rm nome_arquivo
 
-# Reverter Commit
-- Reverte commit
-  * git revert nome do commit
-  * git revert head (revert o último commit)
+#### //Renomear Arquivo
+  * git rm nome_arquivo novo_nome_arquivo
+
+#### //Mover Arquivo
+  * git mv nome_arquivo nome_pasta/nome_arquivo
+
+#### //Desfazer Alterações Ainda Não Salvas no Git
+  * git checkout --nome_arquivo
+
+#### //Desfazer Alterações Adicionadas ao Git sem as Apagar
+  * git reset --nome_arquivo
+
+#### //Desfazer Alterações Adicionadas ao Git e Apaga-las
+  * git reset --hard
+
+#### //Desfazer Alterações Commitadas Voltando ao Commit Anterior
+  * git revert --no-edit código_do_commit_a_voltar
