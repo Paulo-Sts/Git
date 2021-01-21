@@ -89,7 +89,7 @@ Aprendendo a usar o sistema de controle de versão Git.
 
 # Manipulação de Arquivos
 
-## Históricos de Arquivos Commitados
+## Histórico de Arquivos Commitados
 
 #### //Histórico de Todos os Commits do Repositório
   * git log
