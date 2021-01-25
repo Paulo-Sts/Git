@@ -18,7 +18,6 @@
 
 ## Git
 
-#### //Introdução
   É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O Git salva uma imagem dos arquivos com suas mudanças em cada versão.
 
 ## Estados do Arquivo
