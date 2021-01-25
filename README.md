@@ -110,6 +110,12 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Resumo das Alterações de Commits 
   * git log --stat
 
+#### //Exibir commit pai
+  * git log --parents
+
+#### //Exibir commit que a branch master está apontando
+  * git log --decorate
+
 # Alterações nos Arquivos
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
@@ -184,3 +190,4 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 
 #### //Integrar alterações realizadas na cópia com o repositório principal
   * Botão Pull Request (feito no github)
+
