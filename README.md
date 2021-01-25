@@ -232,7 +232,7 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 #### //Mesclar uma Branch com a Master Simplificando o Histórico com o Rebase
   * git rebase nome_branch_a_mesclar
 
-# Branches Remotas
+## Branches Remotas
 
 #### //Exibir Branches Remotas
   * git branch -r
