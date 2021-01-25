@@ -1,4 +1,4 @@
-# Git-e-Github
+# Git
 Aprendendo a usar o sistema de controle de versão Git.
 
 #### //Instalação do Git
