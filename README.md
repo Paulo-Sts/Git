@@ -65,7 +65,7 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Criar Repositório e Inicializar o Git 
   * git init nome_repositório
 
-## Salvando no Repositório Git
+## Salvar no Repositório Git
 
 #### //Acessar Estado do Arquivo
   * git status
