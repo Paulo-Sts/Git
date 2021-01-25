@@ -191,3 +191,43 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 #### //Integrar alterações realizadas na cópia com o repositório principal
   * Botão Pull Request (feito no github)
 
+# Branches
+
+## Branch
+É uma linha de desenvolvimento independente em que o código é desenvolvido e commitado sem afetar outras branches.
+
+## Branch Master
+É a ramificação principal definida por padrão pelo git. Caso não existam outras branches todo o código estará na branch master.
+
+#### //Criar Branch
+  * git branch nome_branch
+
+#### //Criar Branch e Mudar para Ela
+  * git checkout -b nome_branch
+
+#### //Exibir Branches Existentes
+  * git branch
+
+#### //Exibir Branches com o Último Commit Associado a Ela
+  * git branch -v
+
+#### //Trocar de Branch
+  * git checkout nome_branch
+
+#### //Apagar Branch
+  * git branch -d nome_branch
+
+#### //Apagar Branch que Tenha Commits não Mesclados com a Master
+  * git branch -D nome_branch
+
+#### //Exibir Branches Mescladas
+  * git branch --merged
+
+#### //Exibir Branches Ainda não Mescladas
+  * git branch -no-merged
+
+#### //Mesclar uma Branch com a Master Criando um Novo Commit de Merge
+  * git merge nome_branch_a_mesclar -m "mensagem"
+
+#### //Mesclar uma Branch com a Master Simplificando o Histórico com o Rebase
+  * git rebase nome_branch_a_mesclar
