@@ -116,7 +116,7 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Exibir commit que a branch master está apontando
   * git log --decorate
 
-# Alterações nos Arquivos
+## Alterações nos Arquivos
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
 #### //Mudanças não Salvas no Git
