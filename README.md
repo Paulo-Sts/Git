@@ -1,12 +1,11 @@
-# Git
-Aprendendo a usar o sistema de controle de versão Git.
+# Introdução
 
 #### //Instalação do Git
 - Acessar o site do Git e escolher a versão mais atualizada disponível:
   https://git-scm.com/ 
 - Após baixar, executar o instalador seguindo as opções padrão.
 
-# Sistema de Controle de Versão
+## Sistema de Controle de Versão
 
 #### //Controle de Versão Local
   É um sistema que gerencia versões através de um banco de dados local, armazenado em um único computador.
@@ -17,12 +16,12 @@ Aprendendo a usar o sistema de controle de versão Git.
 #### //Controle de Versão Distribuído
   É um sistema em que cada usuário trabalha com uma cópia dos arquivos localmente, também gerencia as versões de modo independente. Ao mesmo tempo todos os usuários estão integrados ao repositório central externo que interage com as cópias de repositório de cada usuário.
 
-# Git
+## Git
 
 #### //Introdução
   É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O Git salva uma imagem dos arquivos com suas mudanças em cada versão.
 
-# Estados do Arquivo
+## Estados do Arquivo
 
 #### //Estado Modificado
   Quando o arquivo é modificado, criado ou apagado. Esse é o estágio inicial dos arquivos e nesse estado eles ainda não estão salvos no Git.
