@@ -268,7 +268,7 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 #### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo Simplificando o Histórico
   * git pull --rebase
 
-#### Apagar Branch Remota
+####  * Apagar Branch Remota
 ´´´
-  * git push nome_repositório	:nome_branch_remota
-´´´
+  git push nome_repositório	:nome_branch_remota
+```
