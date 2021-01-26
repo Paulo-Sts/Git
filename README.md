@@ -269,4 +269,6 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
   * git pull --rebase
 
 #### Apagar Branch Remota
+´´´
   * git push nome_repositório	:nome_branch_remota
+´´´
