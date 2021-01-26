@@ -153,7 +153,7 @@ git diff nome_arquivo
 ```
 git diff --staged
 ```
-#### Comparar Dois Commits de um Arquivo
+#### Comparar dois Commits de um Arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
@@ -169,7 +169,7 @@ git rm nome_arquivo novo_nome_arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
-#### Desfazer Alterações Ainda não Salvas no Git
+#### Desfazer Alterações ainda não Salvas no Git
 ```
 git checkout --nome_arquivo
 ```
@@ -255,7 +255,7 @@ git checkout -b nome_branch
 ```
 git branch
 ```
-#### Exibir Branches com o Último Commit Associado a ela
+#### Exibir Branches com o último Commit Associado a ela
 ```
 git branch -v
 ```
@@ -275,7 +275,7 @@ git branch -D nome_branch
 ```
 git branch --merged
 ```
-#### Exibir Branches Ainda não Mescladas
+#### Exibir Branches ainda não Mescladas
 ```
 git branch -no-merged
 ```
@@ -297,11 +297,11 @@ git branch -r
 ```
 git branch -a
 ```
-#### Exibir Último Commit Associado as Branches Remotas
+#### Exibir último Commit Associado as Branches Remotas
 ```
 git branch -r -v
 ```
-#### Exibir Branches Remotas e Locais com o Último Commit Associado a elas
+#### Exibir Branches Remotas e Locais com o último Commit Associado a elas
 ```
 git branch -a -v
 ```
