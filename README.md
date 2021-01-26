@@ -1,6 +1,6 @@
 # Introdução
 
-#### Instalação do Git
+### Instalação do Git
 1. Acessar o site do Git e escolher a versão mais atualizada disponível:
   https://git-scm.com/ 
 2. Após baixar, executar o instalador seguindo as opções padrão.
@@ -35,61 +35,61 @@
 
 ## Ajuda e Orientações
 
-### Versão do Git
+#### Versão do Git
 ```
 git --version
 ```
-### Ajuda do Git
+#### Ajuda do Git
 ```
 git help
 ```
 ## Configurações de Usuário
 
-### Configurar Nome do Usuário
+#### Configurar Nome do Usuário
 ```
 git config --global user.name "nome"
 ```
-### Configurar Email do Usuário
+#### Configurar Email do Usuário
 ```
 git config --global user.email "email"
 ```
-### Configurar Editor de Texto do Usuário
+#### Configurar Editor de Texto do Usuário
 ```
 git config --global core.editor "editor"
 ```
-### Acessar Configurações do Usuário
+#### Acessar Configurações do Usuário
 ```
 git config --global configuração_desejada
 ```
 ## Inicializar o Git
 
-### Inicializar o Git em Um repositório
+#### Inicializar o Git em Um repositório
 ```
 git init
 ```  
-### Criar Repositório e Inicializar o Git 
+#### Criar Repositório e Inicializar o Git 
 ```
 git init nome_repositório
 ```
 ## Salvar no Repositório Git
 
-### Acessar Estado do Arquivo
+#### Acessar Estado do Arquivo
 ```
 git status
 ```    
-### Adicionar Um Arquivo ao Git
+#### Adicionar Um Arquivo ao Git
 ```
 git add nome_arquivo
 ```
-### Adicionar Todos os Arquivos ao Git
+#### Adicionar Todos os Arquivos ao Git
 ```
 git add . 
 ```    
-### Salvar Arquivos no Git
+#### Salvar Arquivos no Git
 ```
 git commit -m "mensagem" 
 ```  
-### Adicionar e Salvar Arquivos no Git
+#### Adicionar e Salvar Arquivos no Git
 ```
 git commit -a -m "mensagem" 
 ```
@@ -102,85 +102,86 @@ git commit -a -m "mensagem"
 
 ## Histórico de Arquivos Commitados
 
-### Histórico de Todos os Commits do Repositório
+#### Histórico de Todos os Commits do Repositório
 ```
 git log
 ```
-### Histórico de um Arquivo Específico
+#### Histórico de um Arquivo Específico
 ```
-git log nome_arquivo (consulta um arquivo específico)
+git log nome_arquivo 
 ```  
-###  Alterações Detalhadas de Arquivos
+#### Exibir Alterações Detalhadas de Todos os Arquivos
 ```
-git show (mostra as últimas alterações)
+git show 
 ```
+#### Exibir Alterações Detalhadas em um Arquivo
 ```
-git show nome_commit (mostra as alterações detalhadas de um arquivo)
+git show nome_commit 
 ```
-### Histórico dos últimos Arquivos do Repositório
+#### Histórico dos últimos Arquivos do Repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
-### Resumo do Histórico de Commits do Repositório
+#### Resumo do Histórico de Commits do Repositório
 ```
 git log --oneline 
 ```
-### Resumo das Alterações de Commits 
+#### Resumo das Alterações de Commits 
 ```
 git log --stat
 ```
-### Exibir commit pai
+#### Exibir commit pai
 ```
 git log --parents
 ```
-### Exibir commit que a branch master está apontando
+#### Exibir commit que a branch master está apontando
 ```
 git log --decorate
 ```
 ## Alterações nos Arquivos
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
-### Exibir Mudanças não Salvas no Git em Todos os Arquivos
+#### Exibir Mudanças não Salvas no Git em Todos os Arquivos
 ```
 git diff 
 ```
-### Exibir Mudanças não Salvas no Git em um Arquivo Específico
+#### Exibir Mudanças não Salvas no Git em um Arquivo Específico
 ```
 git diff nome_arquivo 
 ```
-### Mudanças não Commitadas 
+#### Mudanças não Commitadas 
 ```
 git diff --staged
 ```
-### Comparar Dois Commits de Um Arquivo
+#### Comparar Dois Commits de Um Arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
-### Apagar Arquivo
+#### Apagar Arquivo
 ```
 git rm nome_arquivo
 ```
-### Renomear Arquivo
+#### Renomear Arquivo
 ```
 git rm nome_arquivo novo_nome_arquivo
 ```
-### Mover Arquivo
+#### Mover Arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
-### Desfazer Alterações Ainda Não Salvas no Git
+#### Desfazer Alterações Ainda Não Salvas no Git
 ```
 git checkout --nome_arquivo
 ```
-### Desfazer Alterações Adicionadas ao Git sem as Apagar
+#### Desfazer Alterações Adicionadas ao Git sem as Apagar
 ```
 git reset --nome_arquivo
 ```
-### Desfazer Alterações Adicionadas ao Git e Apaga-las
+#### Desfazer Alterações Adicionadas ao Git e Apaga-las
 ```
 git reset --hard
 ```
-### Desfazer Alterações Commitadas Voltando ao Commit Anterior
+#### Desfazer Alterações Commitadas Voltando ao Commit Anterior
 ```
 git revert --no-edit código_do_commit_a_voltar
 ```
@@ -189,49 +190,49 @@ git revert --no-edit código_do_commit_a_voltar
 ## Repositório Remoto
 É responsável por hospedar o versionamento, sendo o ponto de acesso dos usuários locais. Geralmente é usado como repositório central, não sendo acessado diretamente, mas funcionando como backup e repositório de integração do que está sendo trabalhado pelos usuários nos repositórios locais.
 
-### Criar Repositório Remoto
+#### Criar Repositório Remoto
 ```
 git init --bare nome_repositório.git
 ```
-### Adicionar Repositório Remoto
+#### Adicionar Repositório Remoto
 ```
 git remote add nome_repositório endereço_repositório
 ```
-### Listar Repositórios Remotos
+#### Listar Repositórios Remotos
 ```
 git remote
 ```
-### Listar Repositórios Remotos e Seus Endereços
+#### Listar Repositórios Remotos e Seus Endereços
 ```
 git remote -v
 ```
-### Renomear Repositório Remoto
+#### Renomear Repositório Remoto
 ```
 git remote rename nome_repositório novo_nome
 ```
-### Alterar o Endereço do Repositório Remoto
+#### Alterar o Endereço do Repositório Remoto
 ```
 git remote set-url nome_repositório novo_endereço
 ```
-### Enviar commits para o Repositório Remoto
+#### Enviar commits para o Repositório Remoto
 ```
 git push nome_repositório nome_branch
 ```
-### Clonar Repositório Remoto
+#### Clonar Repositório Remoto
 ```
 git clone endereço_repositório
 ```
-### Sincronizar Repositório Local com Repositório Remoto
+#### Sincronizar Repositório Local com Repositório Remoto
 ```
 git pull nome_repositório nome_branch
 ```
 ## GitHub
 É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
 
-### Copiar Repositório de Outro Usuário para o Nosso Usuário
+#### Copiar Repositório de Outro Usuário para o Nosso Usuário
 Botão Fork (feito no github)
 
-### Integrar alterações realizadas na cópia com o repositório principal
+#### Integrar alterações realizadas na cópia com o repositório principal
 Botão Pull Request (feito no github)
 
 # Branches
@@ -242,101 +243,101 @@ Botão Pull Request (feito no github)
 ## Branch Master
 É a ramificação principal definida por padrão pelo git. Caso não existam outras branches todo o código estará na branch master.
 
-### Criar Branch
+#### Criar Branch
 ```
 git branch nome_branch
 ```
-### Criar Branch e Mudar para Ela
+#### Criar Branch e Mudar para Ela
 ```
 git checkout -b nome_branch
 ```
-### Exibir Branches Existentes
+#### Exibir Branches Existentes
 ```
 git branch
 ```
-### Exibir Branches com o Último Commit Associado a Ela
+#### Exibir Branches com o Último Commit Associado a Ela
 ```
 git branch -v
 ```
-### Trocar de Branch
+#### Trocar de Branch
 ```
 git checkout nome_branch
 ```
-### Apagar Branch
+#### Apagar Branch
 ```
 git branch -d nome_branch
 ```
-### Apagar Branch que Tenha Commits não Mesclados com a Master
+#### Apagar Branch que Tenha Commits não Mesclados com a Master
 ```
 git branch -D nome_branch
 ```
-### Exibir Branches Mescladas
+#### Exibir Branches Mescladas
 ```
 git branch --merged
 ```
-### Exibir Branches Ainda não Mescladas
+#### Exibir Branches Ainda não Mescladas
 ```
 git branch -no-merged
 ```
-### Mesclar uma Branch com a Master Criando um Novo Commit de Merge
+#### Mesclar uma Branch com a Master Criando um Novo Commit de Merge
 ```
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
-### Mesclar uma Branch com a Master Simplificando o Histórico com o Rebase
+#### Mesclar uma Branch com a Master Simplificando o Histórico com o Rebase
 ```
 git rebase nome_branch_a_mesclar
 ```
 ## Branches Remotas
 
-### Exibir Branches Remotas
+#### Exibir Branches Remotas
 ```
 git branch -r
 ```
-### Exibir Branches Remotas e Locais
+#### Exibir Branches Remotas e Locais
 ```
 git branch -a
 ```
-### Exibir Último Commit Associado as Branches Remotas
+#### Exibir Último Commit Associado as Branches Remotas
 ```
 git branch -r -v
 ```
-### Exibir Branches Remotas e Locais com o Último Commit Associado a Elas
+#### Exibir Branches Remotas e Locais com o Último Commit Associado a Elas
 ```
 git branch -a -v
 ```
-### Enviar Commits de Uma Branch Local para o Repositório Remoto
+#### Enviar Commits de Uma Branch Local para o Repositório Remoto
 ```
 git nome_repositório_remoto nome_branch_local
 ```
-### Criar Branch Local a partir de Branch Remota as Associando
+#### Criar Branch Local a partir de Branch Remota as Associando
 ```
 git checkout -b nome_branch nome_repositório_remoto/nome_branch_remota
 ```
-### Criar Branch Local a partir de Branch Remota as Associando (Opção 2)
+#### Criar Branch Local a partir de Branch Remota as Associando (Opção 2)
 ```
 git checkout -t nome_repositório_remoto/nome_branch_remota
 ```
-### Obter Commits de um Repositório Remoto Ainda não Presentes no Repositório Local
+#### Obter Commits de um Repositório Remoto Ainda não Presentes no Repositório Local
 ```
 git fetch nome_repositório_remoto
 ```
-### Mesclar Branches Remotas e Locais com o Commit de Merge
+#### Mesclar Branches Remotas e Locais com o Commit de Merge
 ```
 git merge nome_repositório/nome_branch -m "mensagem"
 ```
-### Mesclar Branches Remotas e Locais com o Rebase
+#### Mesclar Branches Remotas e Locais com o Rebase
 ```
 git rebase nome_repositório/nome_branch
 ```
-### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo
+#### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo
 ```
 git pull
 ```
-### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo Simplificando o Histórico
+#### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo Simplificando o Histórico
 ```
  git pull --rebase
 ```
-### Apagar Branch Remota
+#### Apagar Branch Remota
 ```
 git push nome_repositório	:nome_branch_remota
 ```
