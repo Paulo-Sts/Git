@@ -1,19 +1,19 @@
 # Introdução
 
 #### Instalação do Git
-- Acessar o site do Git e escolher a versão mais atualizada disponível:
+1. Acessar o site do Git e escolher a versão mais atualizada disponível:
   https://git-scm.com/ 
-- Após baixar, executar o instalador seguindo as opções padrão.
+2. Após baixar, executar o instalador seguindo as opções padrão.
 
 ## Sistema de Controle de Versão
 
-#### Controle de Versão Local
+### Controle de Versão Local
   É um sistema que gerencia versões através de um banco de dados local, armazenado em um único computador.
 
-#### Controle de Versão Centralizado
+### Controle de Versão Centralizado
   É um sistema que gerencia versões através de um servidor central, esse servidor administra o acesso, mudanças e versões dos arquivos.
 
-#### Controle de Versão Distribuído
+### Controle de Versão Distribuído
   É um sistema em que cada usuário trabalha com uma cópia dos arquivos localmente, também gerencia as versões de modo independente. Ao mesmo tempo todos os usuários estão integrados ao repositório central externo que interage com as cópias de repositório de cada usuário.
 
 ## Git
