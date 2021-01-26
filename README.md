@@ -63,7 +63,7 @@ git config --global configuração_desejada
 ```
 ## Inicializar o Git
 
-#### Inicializar o Git em Um repositório
+#### Inicializar o Git em um repositório
 ```
 git init
 ```  
@@ -77,11 +77,11 @@ git init nome_repositório
 ```
 git status
 ```    
-#### Adicionar Um Arquivo ao Git
+#### Adicionar um Arquivo para ser Rastreado pelo Git
 ```
 git add nome_arquivo
 ```
-#### Adicionar Todos os Arquivos ao Git
+#### Adicionar Todos os Arquivos para serem Rastreados pelo Git
 ```
 git add . 
 ```    
@@ -102,11 +102,11 @@ git commit -a -m "mensagem"
 
 ## Histórico de Arquivos Commitados
 
-#### Histórico de Todos os Commits do Repositório
+#### Exibir Histórico de Todos os Commits do Repositório
 ```
 git log
 ```
-#### Histórico de um Arquivo Específico
+#### Exibir Histórico de um Arquivo Específico
 ```
 git log nome_arquivo 
 ```  
@@ -118,23 +118,23 @@ git show
 ```
 git show nome_commit 
 ```
-#### Histórico dos últimos Arquivos do Repositório
+#### Exibir Histórico dos últimos Arquivos do Repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
-#### Resumo do Histórico de Commits do Repositório
+#### Exibir Resumo do Histórico de Commits do Repositório
 ```
 git log --oneline 
 ```
-#### Resumo das Alterações de Commits 
+#### Exibir Resumo das Alterações de Commits 
 ```
 git log --stat
 ```
-#### Exibir commit pai
+#### Exibir Commit Pai
 ```
 git log --parents
 ```
-#### Exibir commit que a branch master está apontando
+#### Exibir Commit que a Branch Master está Apontando
 ```
 git log --decorate
 ```
@@ -149,11 +149,11 @@ git diff
 ```
 git diff nome_arquivo 
 ```
-#### Mudanças não Commitadas 
+#### Exibir Mudanças não Commitadas 
 ```
 git diff --staged
 ```
-#### Comparar Dois Commits de Um Arquivo
+#### Comparar Dois Commits de um Arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
@@ -169,7 +169,7 @@ git rm nome_arquivo novo_nome_arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
-#### Desfazer Alterações Ainda Não Salvas no Git
+#### Desfazer Alterações Ainda não Salvas no Git
 ```
 git checkout --nome_arquivo
 ```
@@ -181,7 +181,7 @@ git reset --nome_arquivo
 ```
 git reset --hard
 ```
-#### Desfazer Alterações Commitadas Voltando ao Commit Anterior
+#### Desfazer Alterações Commitadas voltando ao Commit Anterior
 ```
 git revert --no-edit código_do_commit_a_voltar
 ```
@@ -202,7 +202,7 @@ git remote add nome_repositório endereço_repositório
 ```
 git remote
 ```
-#### Listar Repositórios Remotos e Seus Endereços
+#### Listar Repositórios Remotos e seus Endereços
 ```
 git remote -v
 ```
@@ -214,7 +214,7 @@ git remote rename nome_repositório novo_nome
 ```
 git remote set-url nome_repositório novo_endereço
 ```
-#### Enviar commits para o Repositório Remoto
+#### Enviar Commits para o Repositório Remoto
 ```
 git push nome_repositório nome_branch
 ```
@@ -229,11 +229,11 @@ git pull nome_repositório nome_branch
 ## GitHub
 É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
 
-#### Copiar Repositório de Outro Usuário para o Nosso Usuário
-Botão Fork (feito no github)
+#### Copiar Repositório de outro Usuário para o nosso Usuário
+* Botão Fork (feito no github)
 
-#### Integrar alterações realizadas na cópia com o repositório principal
-Botão Pull Request (feito no github)
+#### Integrar Alterações Realizadas na Cópia com o Repositório Principal
+* Botão Pull Request (feito no github)
 
 # Branches
 
@@ -247,7 +247,7 @@ Botão Pull Request (feito no github)
 ```
 git branch nome_branch
 ```
-#### Criar Branch e Mudar para Ela
+#### Criar Branch e Mudar para ela
 ```
 git checkout -b nome_branch
 ```
@@ -255,7 +255,7 @@ git checkout -b nome_branch
 ```
 git branch
 ```
-#### Exibir Branches com o Último Commit Associado a Ela
+#### Exibir Branches com o Último Commit Associado a ela
 ```
 git branch -v
 ```
@@ -267,7 +267,7 @@ git checkout nome_branch
 ```
 git branch -d nome_branch
 ```
-#### Apagar Branch que Tenha Commits não Mesclados com a Master
+#### Apagar Branch que tenha Commits não Mesclados com a Master
 ```
 git branch -D nome_branch
 ```
@@ -279,7 +279,7 @@ git branch --merged
 ```
 git branch -no-merged
 ```
-#### Mesclar uma Branch com a Master Criando um Novo Commit de Merge
+#### Mesclar uma Branch com a Master Criando um novo Commit de Merge
 ```
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
@@ -301,11 +301,11 @@ git branch -a
 ```
 git branch -r -v
 ```
-#### Exibir Branches Remotas e Locais com o Último Commit Associado a Elas
+#### Exibir Branches Remotas e Locais com o Último Commit Associado a elas
 ```
 git branch -a -v
 ```
-#### Enviar Commits de Uma Branch Local para o Repositório Remoto
+#### Enviar Commits de uma Branch Local para o Repositório Remoto
 ```
 git nome_repositório_remoto nome_branch_local
 ```
@@ -317,7 +317,7 @@ git checkout -b nome_branch nome_repositório_remoto/nome_branch_remota
 ```
 git checkout -t nome_repositório_remoto/nome_branch_remota
 ```
-#### Obter Commits de um Repositório Remoto Ainda não Presentes no Repositório Local
+#### Obter Commits de um Repositório Remoto ainda não Presentes no Repositório Local
 ```
 git fetch nome_repositório_remoto
 ```
