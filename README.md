@@ -271,53 +271,69 @@ git pull nome_repositório nome_branch
 ## Branch
 É uma linha de desenvolvimento independente em que o código é desenvolvido e commitado sem afetar outras branches.
 
-## Branch Master
-É a ramificação principal definida por padrão pelo git. Caso não existam outras branches todo o código estará na branch master.
+## Branch Main
+É a ramificação principal definida por padrão pelo git. Caso não existam outras branches todo o código estará na branch main.
 
 #### Criar Branch
 ```
 git branch nome_branch
 ```
+
 #### Criar Branch e Mudar para ela
 ```
 git checkout -b nome_branch
 ```
+
 #### Exibir Branches Existentes
 ```
 git branch
 ```
+
 #### Exibir Branches com o último Commit Associado a ela
 ```
 git branch -v
 ```
+
 #### Trocar de Branch
 ```
 git checkout nome_branch
 ```
+
 #### Apagar Branch
 ```
 git branch -d nome_branch
 ```
+
 #### Apagar Branch que tenha Commits não Mesclados com a Master
 ```
 git branch -D nome_branch
 ```
+
 #### Exibir Branches Mescladas
 ```
 git branch --merged
 ```
+
 #### Exibir Branches ainda não Mescladas
 ```
 git branch -no-merged
 ```
-#### Mesclar uma Branch com a Master Criando um novo Commit de Merge
+
+#### Mesclar uma Branch com a Main Criando um novo Commit de Merge
 ```
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
-#### Mesclar uma Branch com a Master Simplificando o Histórico com o Rebase
+
+#### Mesclar uma Branch com a Main Simplificando o Histórico com o Rebase
 ```
 git rebase nome_branch_a_mesclar
 ```
+
+#### Cancelar Mesclagem com o Rebase
+```
+git rebase --abort
+```
+
 ## Branches Remotas
 
 #### Exibir Branches Remotas
