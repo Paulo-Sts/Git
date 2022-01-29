@@ -340,50 +340,62 @@ git rebase --abort
 ```
 git branch -r
 ```
+
 #### Exibir Branches Remotas e Locais
 ```
 git branch -a
 ```
+
 #### Exibir último Commit Associado as Branches Remotas
 ```
 git branch -r -v
 ```
+
 #### Exibir Branches Remotas e Locais com o último Commit Associado a elas
 ```
 git branch -a -v
 ```
+
 #### Enviar Commits de uma Branch Local para o Repositório Remoto
 ```
-git nome_repositório_remoto nome_branch_local
+git push nome_repositório_remoto nome_branch_local
 ```
+
 #### Criar Branch Local a partir de Branch Remota as Associando
 ```
 git checkout -b nome_branch nome_repositório_remoto/nome_branch_remota
 ```
+
 #### Criar Branch Local a partir de Branch Remota as Associando (Opção 2)
 ```
 git checkout -t nome_repositório_remoto/nome_branch_remota
 ```
+
 #### Obter Commits de um Repositório Remoto ainda não Presentes no Repositório Local
 ```
 git fetch nome_repositório_remoto
 ```
+
 #### Mesclar Branches Remotas e Locais com o Commit de Merge
 ```
 git merge nome_repositório/nome_branch -m "mensagem"
 ```
+
 #### Mesclar Branches Remotas e Locais com o Rebase
 ```
 git rebase nome_repositório/nome_branch
 ```
+
 #### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo
 ```
 git pull
 ```
+
 #### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo Simplificando o Histórico
 ```
- git pull --rebase
+git pull --rebase
 ```
+
 #### Apagar Branch Remota
 ```
 git push nome_repositório	:nome_branch_remota
