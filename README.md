@@ -216,38 +216,47 @@ git revert --no-edit código_do_commit_a_voltar
 ```
 git init --bare nome_repositório.git
 ```
+
 #### Adicionar Repositório Remoto
 ```
 git remote add nome_repositório endereço_repositório
 ```
+
 #### Listar Repositórios Remotos
 ```
 git remote
 ```
+
 #### Listar Repositórios Remotos e seus Endereços
 ```
 git remote -v
 ```
+
 #### Renomear Repositório Remoto
 ```
 git remote rename nome_repositório novo_nome
 ```
+
 #### Alterar o Endereço do Repositório Remoto
 ```
 git remote set-url nome_repositório novo_endereço
 ```
+
 #### Enviar Commits para o Repositório Remoto
 ```
 git push nome_repositório nome_branch
 ```
+
 #### Clonar Repositório Remoto
 ```
 git clone endereço_repositório
 ```
+
 #### Sincronizar Repositório Local com Repositório Remoto
 ```
 git pull nome_repositório nome_branch
 ```
+
 ## GitHub
 É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
 
