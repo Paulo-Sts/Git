@@ -108,38 +108,47 @@ git commit -a -m "mensagem"
 ```
 git log
 ```
+
 #### Exibir Histórico de um Arquivo Específico
 ```
 git log nome_arquivo 
 ```  
-#### Exibir Alterações Detalhadas de Todos os Arquivos
-```
-git show 
-```
-#### Exibir Alterações Detalhadas em um Arquivo
-```
-git show nome_commit 
-```
+
 #### Exibir Histórico dos últimos Arquivos do Repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
+
 #### Exibir Resumo do Histórico de Commits do Repositório
 ```
 git log --oneline 
 ```
+
 #### Exibir Resumo das Alterações de Commits 
 ```
 git log --stat
 ```
+
 #### Exibir Commit Pai
 ```
 git log --parents
 ```
+
 #### Exibir Commit que a Branch Master está Apontando
 ```
 git log --decorate
 ```
+
+#### Exibir Alterações Detalhadas de Todos os Arquivos
+```
+git show 
+```
+
+#### Exibir Alterações Detalhadas em um Arquivo
+```
+git show nome_commit 
+```
+
 ## Alterações nos Arquivos
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
