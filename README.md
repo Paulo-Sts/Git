@@ -156,46 +156,57 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 ```
 git diff 
 ```
+
 #### Exibir Mudanças não Salvas no Git em um Arquivo Específico
 ```
 git diff nome_arquivo 
 ```
+
 #### Exibir Mudanças não Commitadas 
 ```
 git diff --staged
 ```
+
 #### Comparar dois Commits de um Arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
+
 #### Apagar Arquivo
 ```
 git rm nome_arquivo
 ```
+
 #### Renomear Arquivo
 ```
 git rm nome_arquivo novo_nome_arquivo
 ```
+
 #### Mover Arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
+
 #### Desfazer Alterações ainda não Salvas no Git
 ```
 git checkout --nome_arquivo
 ```
+
 #### Desfazer Alterações Adicionadas ao Git sem as Apagar
 ```
 git reset --nome_arquivo
 ```
+
 #### Desfazer Alterações Adicionadas ao Git e Apaga-las
 ```
 git reset --hard
 ```
+
 #### Desfazer Alterações Commitadas voltando ao Commit Anterior
 ```
 git revert --no-edit código_do_commit_a_voltar
 ```
+
 # Repositórios Externos
 
 ## Repositório Remoto
