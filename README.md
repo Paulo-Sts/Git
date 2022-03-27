@@ -362,46 +362,46 @@ git pull --rebase
 git push nome_repositório	:nome_branch_remota
 ```
 
-## Tags
+## TAGS
 As tags são apontadores fixos de commits e trabalham "tirando uma foto" do código atual do repositório para dessa forma indicar e identificar uma versão. Elas possuem um nome
 que define qual versão a tag está apontando.
 
-#### Criar Tag
+> #### Criar tag
 ```
 git tag nome_tag
 ```
 
-#### Exibir Tags
+> #### Exibir tags
 ```
 git tag 
 ```
 
-#### Criar Tag de um Commit Anterior
+> #### Criar tag de um commit anterior
 ```
 git tag nome_tag número_commit
 ```
 
-#### Apagar Tag 
+> #### Apagar tag 
 ```
 git tag -d nome_tag 
 ```
 
-#### Criar Tag Anotada
+> #### Criar tag anotada
 ```
 git tag -a nome_tag -m "mensagem" 
 ```
 
-#### Exibir Tags Anotadas
+> #### Exibir tags anotadas
 ```
 git show -s nome_tag 
 ```
 
-#### Enviar Tag Para Repositório Remoto
+> #### Enviar tag para repositório remoto
 ```
 git push nome_repositorio nome_tag 
 ```
 
-#### Enviar Todas as Tags Para Repositório Remoto
+> #### Enviar todas as tags para repositório remoto
 ```
 git push nome_repositorio --tags 
 ```
