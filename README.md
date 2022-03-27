@@ -307,69 +307,57 @@ git rebase nome_branch_a_mesclar
 git rebase --abort
 ```
 
-## Branches Remotas
+### Branches Remotas
 
-#### Exibir Branches Remotas
+> #### Exibir branches remotas
 ```
 git branch -r
 ```
-
-#### Exibir Branches Remotas e Locais
+> #### Exibir branches remotas e locais
 ```
 git branch -a
 ```
-
-#### Exibir último Commit Associado as Branches Remotas
+> #### Exibir último commit associado as branches remotas
 ```
 git branch -r -v
 ```
-
-#### Exibir Branches Remotas e Locais com o último Commit Associado a elas
+> #### Exibir branches remotas e locais com o último commit associado a elas
 ```
 git branch -a -v
 ```
-
-#### Enviar Commits de uma Branch Local para o Repositório Remoto
+> #### Enviar commits de uma branch local para o repositório remoto
 ```
 git push nome_repositório_remoto nome_branch_local
 ```
-
-#### Criar Branch Local a partir de Branch Remota as Associando
+> #### Criar branch local a partir de branch remota as associando
 ```
 git checkout -b nome_branch nome_repositório_remoto/nome_branch_remota
 ```
-
-#### Criar Branch Local a partir de Branch Remota as Associando (Opção 2)
+> #### Criar branch local a partir de branch remota as associando (Opção 2)
 ```
 git checkout -t nome_repositório_remoto/nome_branch_remota
 ```
-
-#### Obter Commits de um Repositório Remoto ainda não Presentes no Repositório Local
+> #### Obter commits de um repositório remoto ainda não presentes no repositório local
 ```
 git fetch nome_repositório_remoto
 ```
-
-#### Mesclar Branches Remotas e Locais com o Commit de Merge
+> #### Mesclar branches remotas e locais com o commit de merge
 ```
 git merge nome_repositório/nome_branch -m "mensagem"
 ```
-
-#### Mesclar Branches Remotas e Locais com o Rebase
+> #### Mesclar branches remotas e locais com o rebase
 ```
 git rebase nome_repositório/nome_branch
 ```
-
-#### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo
+> #### Obter commits do repositório remoto e mesclar ao mesmo tempo
 ```
 git pull
 ```
-
-#### Obter Commits do Repositório Remoto e Mesclar ao Mesmo Tempo Simplificando o Histórico
+> #### Obter commits do repositório remoto e mesclar ao mesmo tempo simplificando o histórico
 ```
 git pull --rebase
 ```
-
-#### Apagar Branch Remota
+> #### Apagar branch remota
 ```
 git push nome_repositório	:nome_branch_remota
 ```
