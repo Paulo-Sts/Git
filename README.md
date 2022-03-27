@@ -201,6 +201,8 @@ git reset --hard
 git revert --no-edit código_do_commit_a_voltar
 ```
 
+## REPOSITÓRIOS EXTERNOS
+
 ### Repositório remoto
 É responsável por hospedar o versionamento, sendo o ponto de acesso dos usuários locais. Geralmente é usado como repositório central, não sendo acessado diretamente, mas funcionando como backup e repositório de integração do que está sendo trabalhado pelos usuários nos repositórios locais.
 
@@ -400,6 +402,7 @@ git show -s nome_tag
 ```
 git push nome_repositorio nome_tag 
 ```
+<br>
 
 > #### Enviar todas as tags para repositório remoto
 ```
