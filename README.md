@@ -472,8 +472,8 @@ git push nome_repositorio --tags
 
 ### Um repositório central utilizando apenas a branch main
 Todo o código fica armazenado na branch main local, onde são salvas as alterações e commits. Após as mudanças estarem prontas os commits são enviados para o repositório
-remoto. É necessário sincronizar os repositórios locais de cada usuário para se obter as alterações.  
-Esse fluxo de trabalho é indicado para pequenos projetos com uma equipe pequena.  
+remoto.   
+É necessário sincronizar os repositórios locais de cada usuário para se obter as alterações.Esse fluxo de trabalho é indicado para pequenos projetos com uma equipe pequena.  
 
 > Fluxo:
 1. Clonar repositório;
