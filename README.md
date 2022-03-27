@@ -467,3 +467,137 @@ git push nome_repositorio nome_tag
 ```
 git push nome_repositorio --tags 
 ```
+
+## FORMAS DE TRABALHAR COM O GIT
+
+### Um repositório central utilizando apenas a branch main
+Todo o código fica armazenado na branch main local, onde são salvas as alterações e commits. Após as mudanças estarem prontas os commits são enviados para o repositório
+remoto. É necessário sincronizar os repositórios locais de cada usuário para se obter as alterações. Esse fluxo de trabalho é indicado para pequenos projetos com uma equipe pequena.  
+
+> Fluxo:
+1. Clonar repositório;
+2. Realizar alterações;
+3. Adiciona-las ao git e commita-las;
+4. Enviar commits para o repositório remoto;
+5. Obter modificações dos outros desenvolvedores do repositório remoto;
+6. Corrigir possíveis conflitos;
+7. Ao realizar uma entrega definir uma tag e envia-la ao repositório remoto.
+
+> Vantagens:
+* Simplificação do fluxo para iniciantes;
+* Facilidade para adotar uma integração contínua do desenvolvimento.
+
+> Desvantagens:
+* A correção de defeitos fica mais difícil de gerenciar pois o código já pode ter sido compartilhado para o repositório remoto;
+* A entrega de funcionalidades fica restrita a entrega de todo o código, já que tudo fica armazenado na branch master, isso dificulta a entrega de apenas só parte de novas
+funcionalidades;
+* É necessário permissão de push para todos os usuários já que há apenas um repositório, é inviável para projetos open source e em projetos com grandes equipes.
+
+### Um repositório central usando branches por funcionalidade
+A branch main é utilizada para guardar o código pronto para uso, novas alterações e funcionalidades são feitas em branches separadas que ao serem finalizadas são mescladas
+através do merge ou rebase a branch main criando assim uma nova versão por exemplo. Apenas alterações emergenciais devem ser feitas diretamente na branch main e após feitas deve-se sincronizar com a branch da funcionalidade para que esta ao mesclar com a main não gere conflitos. É recomendada para projetos maiores em que novas funcionalidades devem ser entregues rapidamente.
+
+> Fluxo:
+1. Clonar repositório;
+2. Criar branch de funcionalidade e ir para ela a partir da main para realizar alterações;
+3. Realizar alterações;
+4. Adiciona-las ao git e commita-las;
+5. Enviar a nova branch de funcionalidade com os commits para o repositório remoto;
+6. Para os demais desenvolvedores poderem colaborar na nova branch de funcionalidade devem sincronizar seu repositório local com o remoto;
+7. Criar um nova branch de funcionalidade local e sincronizar a nova branch local de funcionalidade com a branch remota de funcionalidade que havia sido criada;
+8. Obter modificações dos outros desenvolvedores do repositório remoto;
+9. Obter correções urgentes realizadas na main a sincronizando com o repositório remoto;
+10. Corrigir possíveis conflitos;
+11. Após finalizar uma função mesclar a branch de funcionalidade com a branch main;
+12. Sincronizar também com a branch main do repositório remoto;
+13. Ao realizar uma entrega definir uma tag e envia-la ao repositório remoto.
+
+> Vantagens:
+* O código mais estável fica isolado na branch main o que facilita possíveis correções emergenciais;
+* Pode-se entregar apenas partes das funcionalidades, possibilitando mudanças mais tranquilas na estratégia de negócio do cliente.
+
+> Desvantagens:
+* É um fluxo de uso do git que exige um pouco mais de domínio do git por parte dos usuários;
+* Ainda é necessário dar permissão de push para todos os membros da equipe devido a existência de um único repositório central, sendo novamente inviável em projetos
+open source ou com grandes equipes;
+* Pode ocorrer conflitos entre as novas funcionalidades e isso só é detectável quando todas as branches são mescladas com o merge;
+* Dificulta a adoção de uma metodologia de integração contínua.
+
+### Um repositório central com branches por etapa de desenvolvimento
+A main é utilizada como repositório com código estável e é criada uma branch para o desenvolvimento de novas funcionalidades (pode ser chamada de desenv). A partir da branch
+de desenvolvimento são criadas branches específicas para cada funcionalidade que ao serem finalizadas são mescladas com a branch de desenvolvimento e essa por sua vez ao ser validada é mesclada a main. Já para o caso de correções de erros urgentes, é criada uma branch de curto prazo a partir da main (pode ser chamada de hotflix) e então nela o erro é corrigido. Após isso a branch é mesclada com a main para inserir as correções e também com a branch de desenvolvimento para mante-la sincronizada com a branch main.   
+Com a conclusão de funcionalidades e/ou correções as branches de curto prazo podem ser apagadas. Novas funcionalidades incluem uma nova versão e uma tag deve ser definida após a mesclagem com a branch main. É recomendado para projeto complexos que já possuam várias funcionalidades em desenvolvimento, pois esse fluxo torna o trabalho mais organizado em que a branch de desenvolvimento atua como integração entre as novas funcionalidades e como validador de possíveis erros ou bugs são identificados cedo.
+
+> Fluxo:
+1. Clonar repositório;
+2. Criar branch desenv a partir da main;
+3. Sincroniza-la com a branch desenv remota e aponta-la para ela;
+4. Criar branches a partir de desenv para o desenvolvimento de novas funcionalidades;
+5. Realizar alterações um uma branch de funcionalidade;
+6. Adiciona-las ao git e commita-las;
+7. Após concluída mesclar alterações com a branch desenv;
+8. Validar o código na branch desenv;
+9. Mesclar novas alterações com a main
+10. Enviar alterações para o repositório remoto;
+11. Obter modificações dos outros desenvolvedores do repositório remoto;
+12. Corrigir possíveis conflitos;
+13. Para resolver erros urgentes cria-se uma branch a partir da main chamada hotflix;
+14. Após corrigir o erro mesclar a branch hotflix com a main e também a branch desenv para mante-las atualizadas;
+15. Ao realizar uma entrega definir uma tag e envia-la ao repositório remoto.
+
+> Vantagens:
+* A branch main fica bem estável;
+* Erros e conflitos são descobertos mais cedo ao se mesclar as branches de funcionalidade com a branch de desenvolvimento de maneira periódica;
+* Por usar um fluxo de branches por funcionalidade, revisões nas versões se tornam mais fáceis de realizar;
+* Correções urgentes tem um fluxo de solução definido com as branches de curto prazo (hotflix).
+* Apenas partes das funcionalidades podem ser entregues ao se isolar na branch de desenvolvimento apenas as funções prontas para mesclagem.
+
+> Desvantagens:
+* É necessário que a equipe tenha um bom domínio do git;
+* É um fluxo de gerenciamento complexo;
+* Todos os membros da equipe precisam de permissão de push o que torna inviável para grandes equipes e projetos open-source;
+* A integração contínua não ocorre pois novas funcionalidades só são entregues após serem mescladas com a branch de desenvolvimento e essa com a main.
+
+### Colaborando em projetos open source com fork e pull request
+É feita uma cópia pública do repositório original com o fork, baixa-la para o nosso repositório local e a partir da cópia deve ser criada uma branch onde se armazenará as alterações, podendo ser uma branch por funcionalidade ou uma branch de desenvolvimento. Ao finalizar mescla-se o repositório local com a cópia do repositório remoto e podemos solicitar ao mantenedor do repositório original um pull resquest da nossa cópia. Ele então revisará as modificações podendo sugerir melhorias, ele mesmo corrigir após o pull request na branch com as modificações e mesclar com o repositório original se considerar tudo certo. É indicado para projeto open-source de pequeno e médio porte.
+
+> Fluxo:
+1. Obter uma cópia do repositório original com o fork;
+2. Clonar repositório;
+3. Criar branch de funcionalidade ou desenvolvimento local e ir para ela para realizar alterações;
+4. Realizar alterações;
+5. Adiciona-las ao git e commita-las;
+6. Enviar para o repositório remoto;
+7. Solicitar pull request.
+
+> Vantagens:
+* Não é necessário dar permissão de push para todos os desenvolvedores;
+* Útil para projeto open source de pequeno e médio porte.
+
+> Desvantagens:
+* A integração com o fork é muito tardia e erros só são identificados após o pull request;
+* Tendo apenas um mantenedor o número de pull requests poderá se acumular.
+
+### Organizando grandes projetos open source com um ditador e tenentes
+Existe um mantenedor principal chamado ditador que tem a última palavra quando a incorporação de uma nova funcionalidade. Esse ditador define um conjunto de colaboradores
+chamados tenentes que possuem uma cópia do repositório original com o fork focados no desenvolvimento de um módulo específico. A partir desses módulos colaboradores podem fazer
+contribuições obtendo uma cópia desse módulo, o baixando para o seu repositório local, definindo uma branch desenvolvimento ou por funcionalidade e trabalhando no projeto.   
+Após finalizada e enviada a cópia do repositório remoto do então é executado um pull request para o módulo do tenente que então define se incorpora ao seu módulo as modificações ou não. Quando necessário então o tenente envia o conjunto de modificações do seu módulo ao repositório original do ditador com um novo pull request, esse por sua vez decide pela incorporação dessas modificações. É um modelo útil para grandes projetos open source com milhares de colaboradores.
+
+> Fluxo:
+1. Obter uma cópia do repositório do tenente com o módulo desejado com o fork;
+2. Clonar repositório;
+3. Criar branch de funcionalidade ou desenvolvimento local e ir para ela para realizar alterações;
+4. Realizar alterações;
+5. Adiciona-las ao git e commita-las;
+6. Enviar para o repositório remoto;
+7. Solicitar pull request ao tenente;
+8. Após um conjunto de modificações o tenente solicita um pull request ao ditador.
+
+> Vantagens:
+* Não são necessárias permissões de push para os colaboradores;
+* Funciona bem em grandes projetos colaborativos.
+
+> Desvantagens:
+* É um fluxo de trabalho extremamente complexo;
+* A incorporação ocorre de maneira tardia.
