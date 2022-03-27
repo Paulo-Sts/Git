@@ -472,7 +472,8 @@ git push nome_repositorio --tags
 
 ### Um repositório central utilizando apenas a branch main
 Todo o código fica armazenado na branch main local, onde são salvas as alterações e commits. Após as mudanças estarem prontas os commits são enviados para o repositório
-remoto. É necessário sincronizar os repositórios locais de cada usuário para se obter as alterações. Esse fluxo de trabalho é indicado para pequenos projetos com uma equipe pequena.  
+remoto. É necessário sincronizar os repositórios locais de cada usuário para se obter as alterações.  
+Esse fluxo de trabalho é indicado para pequenos projetos com uma equipe pequena.  
 
 > Fluxo:
 1. Clonar repositório;
@@ -526,7 +527,8 @@ open source ou com grandes equipes;
 
 ### Um repositório central com branches por etapa de desenvolvimento
 A main é utilizada como repositório com código estável e é criada uma branch para o desenvolvimento de novas funcionalidades (pode ser chamada de desenv). A partir da branch
-de desenvolvimento são criadas branches específicas para cada funcionalidade que ao serem finalizadas são mescladas com a branch de desenvolvimento e essa por sua vez ao ser validada é mesclada a main. Já para o caso de correções de erros urgentes, é criada uma branch de curto prazo a partir da main (pode ser chamada de hotflix) e então nela o erro é corrigido. Após isso a branch é mesclada com a main para inserir as correções e também com a branch de desenvolvimento para mante-la sincronizada com a branch main.   
+de desenvolvimento são criadas branches específicas para cada funcionalidade que ao serem finalizadas são mescladas com a branch de desenvolvimento e essa por sua vez ao ser validada é mesclada a main. Já para o caso de correções de erros urgentes, é criada uma branch de curto prazo a partir da main (pode ser chamada de hotflix) e então nela o erro é corrigido.  
+Após isso a branch é mesclada com a main para inserir as correções e também com a branch de desenvolvimento para mante-la sincronizada com a branch main.     
 Com a conclusão de funcionalidades e/ou correções as branches de curto prazo podem ser apagadas. Novas funcionalidades incluem uma nova versão e uma tag deve ser definida após a mesclagem com a branch main.  
 É recomendado para projeto complexos que já possuam várias funcionalidades em desenvolvimento, pois esse fluxo torna o trabalho mais organizado em que a branch de desenvolvimento atua como integração entre as novas funcionalidades e como validador de possíveis erros ou bugs são identificados cedo.
 
@@ -561,7 +563,8 @@ Com a conclusão de funcionalidades e/ou correções as branches de curto prazo 
 * A integração contínua não ocorre pois novas funcionalidades só são entregues após serem mescladas com a branch de desenvolvimento e essa com a main.
 
 ### Colaborando em projetos open source com fork e pull request
-É feita uma cópia pública do repositório original com o fork, baixa-la para o nosso repositório local e a partir da cópia deve ser criada uma branch onde se armazenará as alterações, podendo ser uma branch por funcionalidade ou uma branch de desenvolvimento. Ao finalizar mescla-se o repositório local com a cópia do repositório remoto e podemos solicitar ao mantenedor do repositório original um pull resquest da nossa cópia.  
+É feita uma cópia pública do repositório original com o fork, baixa-la para o nosso repositório local e a partir da cópia deve ser criada uma branch onde se armazenará as alterações, podendo ser uma branch por funcionalidade ou uma branch de desenvolvimento.   
+Ao finalizar mescla-se o repositório local com a cópia do repositório remoto e podemos solicitar ao mantenedor do repositório original um pull resquest da nossa cópia.  
 Ele então revisará as modificações podendo sugerir melhorias, ele mesmo corrigir após o pull request na branch com as modificações e mesclar com o repositório original se considerar tudo certo. É indicado para projeto open-source de pequeno e médio porte.
 
 > Fluxo:
@@ -582,10 +585,12 @@ Ele então revisará as modificações podendo sugerir melhorias, ele mesmo corr
 * Tendo apenas um mantenedor o número de pull requests poderá se acumular.
 
 ### Organizando grandes projetos open source com um ditador e tenentes
-Existe um mantenedor principal chamado ditador que tem a última palavra quando a incorporação de uma nova funcionalidade. Esse ditador define um conjunto de colaboradores
-chamados tenentes que possuem uma cópia do repositório original com o fork focados no desenvolvimento de um módulo específico.  
-A partir desses módulos colaboradores podem fazer contribuições obtendo uma cópia desse módulo, o baixando para o seu repositório local, definindo uma branch desenvolvimento ou por funcionalidade e trabalhando no projeto.     
-Após finalizada e enviada a cópia do repositório remoto do então é executado um pull request para o módulo do tenente que então define se incorpora ao seu módulo as modificações ou não. Quando necessário então o tenente envia o conjunto de modificações do seu módulo ao repositório original do ditador com um novo pull request, esse por sua vez decide pela incorporação dessas modificações. É um modelo útil para grandes projetos open source com milhares de colaboradores.
+Existe um mantenedor principal chamado ditador que tem a última palavra quando a incorporação de uma nova funcionalidade.  
+Esse ditador define um conjunto de colaboradores
+chamados tenentes que possuem uma cópia do repositório original com o fork focados no desenvolvimento de um módulo específico.    
+A partir desses módulos colaboradores podem fazer contribuições obtendo uma cópia desse módulo, o baixando para o seu repositório local, definindo uma branch desenvolvimento ou por funcionalidade e trabalhando no projeto.       
+Após finalizada e enviada a cópia do repositório remoto do então é executado um pull request para o módulo do tenente que então define se incorpora ao seu módulo as modificações ou não.  
+Quando necessário então o tenente envia o conjunto de modificações do seu módulo ao repositório original do ditador com um novo pull request, esse por sua vez decide pela incorporação dessas modificações. É um modelo útil para grandes projetos open source com milhares de colaboradores.
 
 > Fluxo:
 1. Obter uma cópia do repositório do tenente com o módulo desejado com o fork;
