@@ -241,13 +241,13 @@ git clone endereço_repositório
 git pull nome_repositório nome_branch
 ```
 
-## GitHub
+### GitHub
 É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
 
-#### Copiar Repositório de outro Usuário para o nosso Usuário
+> #### Copiar repositório de outro usuário para o nosso usuário
 * Botão Fork (feito no github)
 
-#### Integrar Alterações Realizadas na Cópia com o Repositório Principal
+> #### Integrar alterações realizadas na cópia com o repositório principal
 * Botão Pull Request (feito no github)
 
 # Branches
