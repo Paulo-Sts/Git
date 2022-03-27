@@ -132,12 +132,12 @@ git commit -a -m "mensagem"
 git log
 ```
 
-> #### Exibir histórico de um arquivo específico
+> #### Exibir histórico de commits um arquivo específico
 ```
 git log nome_arquivo 
 ```
 
-> #### Exibir histórico dos últimos arquivos do repositório
+> #### Exibir histórico de commits dos últimos arquivos do repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
@@ -157,7 +157,7 @@ git log --stat
 git log --parents
 ```
 
-> #### Exibir commit que a branch master está apontando
+> #### Exibir commit que a branch main está apontando
 ```
 git log --decorate
 ```
@@ -307,6 +307,11 @@ git branch nome_branch
 git checkout -b nome_branch
 ```
 
+> #### Criar branch a partir de outra branch e mudar para ela
+```
+git checkout -b nome_branch nome_branch_origem
+```
+
 > #### Exibir branches existentes
 ```
 git branch
@@ -347,7 +352,7 @@ git branch -no-merged
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
 
-> #### Mesclar uma branch com a main simplificando o histórico com o Rebase
+> #### Mesclar uma branch com a main simplificando o histórico com o rebase
 ```
 git rebase nome_branch_a_mesclar
 ```
@@ -421,7 +426,7 @@ git pull --rebase
 
 > #### Apagar branch remota
 ```
-git push nome_repositório	:nome_branch_remota
+git push nome_repositório :nome_branch_remota
 ```
 
 ## TAGS
