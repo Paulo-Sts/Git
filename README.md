@@ -51,26 +51,32 @@ Quando o arquivo é salvo como uma versão. Nesse estado o Git salva uma imagem 
 ```
 git --version
 ```
+
 > #### Ajuda do git
 ```
 git help
 ```
+
 > #### Configurar nome do usuário
 ```
 git config --global user.name "nome"
 ```
+
 > #### Configurar email do usuário
 ```
 git config --global user.email "email"
 ```
+
 > #### Configurar editor de texto do usuário
 ```
 git config --global core.editor "editor"
 ```
+
 > #### Definir configurações do usuário de forma local
 ```
 git config --local configuração_desejada
 ```
+
 > #### Acessar configurações do usuário
 ```
 git config --global configuração_desejada
@@ -82,6 +88,7 @@ git config --global configuração_desejada
 ```
 git init
 ```  
+
 > #### Criar repositório inicializando o git 
 ```
 git init nome_repositório
@@ -92,19 +99,23 @@ git init nome_repositório
 > #### Acessar estado do arquivo
 ```
 git status
-```    
+```   
+ 
 > #### Adicionar um arquivo para ser rastreado pelo git
 ```
 git add nome_arquivo
 ```
+
 > #### Adicionar todos os arquivos para serem rastreados pelo git
 ```
 git add . 
-```    
+```
+
 > #### Criar versão dos arquivos no git
 ```
 git commit -m "mensagem" 
-```  
+```
+
 > #### Adicionar e salvar arquivos no git
 ```
 git commit -a -m "mensagem" 
@@ -120,34 +131,42 @@ git commit -a -m "mensagem"
 ```
 git log
 ```
+
 > #### Exibir histórico de um arquivo específico
 ```
 git log nome_arquivo 
-```  
+```
+
 > #### Exibir histórico dos últimos arquivos do repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
+
 > #### Exibir resumo do histórico de commits do repositório
 ```
 git log --oneline 
 ```
+
 > #### Exibir resumo das alterações de commits 
 ```
 git log --stat
 ```
+
 > #### Exibir commit pai
 ```
 git log --parents
 ```
+
 > #### Exibir commit que a branch master está apontando
 ```
 git log --decorate
 ```
+
 > #### Exibir alterações detalhadas de todos os arquivos
 ```
 git show 
 ```
+
 > #### Exibir alterações detalhadas de um commit
 ```
 git show nome_commit 
@@ -160,42 +179,52 @@ Podemos verificar alterações feitas em arquivos que estamos trabalhando e as c
 ```
 git diff 
 ```
+
 > #### Exibir mudanças não salvas no git em um arquivo específico
 ```
 git diff nome_arquivo 
 ```
+
 > #### Exibir mudanças não commitadas 
 ```
 git diff --staged
 ```
+
 > #### Comparar dois commits de um arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
+
 > #### Apagar arquivo
 ```
 git rm nome_arquivo
 ```
+
 > #### Renomear arquivo
 ```
 git rm nome_arquivo novo_nome_arquivo
 ```
+
 > #### Mover arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
+
 > #### Desfazer alterações ainda não salvas no git
 ```
 git checkout --nome_arquivo
 ```
+
 > #### Desfazer alterações adicionadas ao git sem as apagar
 ```
 git reset --nome_arquivo
 ```
+
 > #### Desfazer alterações adicionadas ao git e apaga-las
 ```
 git reset --hard
 ```
+
 > #### Desfazer alterações commitadas voltando ao commit anterior
 ```
 git revert --no-edit código_do_commit_a_voltar
@@ -210,40 +239,48 @@ git revert --no-edit código_do_commit_a_voltar
 ```
 git init --bare nome_repositório.git
 ```
+
 > #### Adicionar repositório remoto
 ```
 git remote add nome_repositório endereço_repositório
 ```
+
 > #### Listar repositórios remotos
 ```
 git remote
 ```
+
 > #### Listar repositórios remotos e seus endereços
 ```
 git remote -v
 ```
+
 > #### Renomear repositório remoto
 ```
 git remote rename nome_repositório novo_nome
 ```
+
 > #### Alterar o endereço do repositório remoto
 ```
 git remote set-url nome_repositório novo_endereço
 ```
+
 > #### Enviar commits para o repositório remoto
 ```
 git push nome_repositório nome_branch
 ```
+
 > #### Clonar repositório remoto
 ```
 git clone endereço_repositório
 ```
+
 > #### Sincronizar repositório local com repositório remoto
 ```
 git pull nome_repositório nome_branch
 ```
 
-### GitHub
+## GITHUB
 É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
 
 > #### Copiar repositório de outro usuário para o nosso usuário
@@ -264,46 +301,57 @@ git pull nome_repositório nome_branch
 ```
 git branch nome_branch
 ```
+
 > #### Criar branch e mudar para ela
 ```
 git checkout -b nome_branch
 ```
+
 > #### Exibir branches existentes
 ```
 git branch
 ```
+
 > #### Exibir branches com o último commit associado a ela
 ```
 git branch -v
 ```
+
 > #### Trocar de branch
 ```
 git checkout nome_branch
 ```
+
 > #### Apagar branch
 ```
 git branch -d nome_branch
 ```
+
 > #### Apagar branch que tenha commits não mesclados com a branch main
 ```
 git branch -D nome_branch
 ```
+
 > #### Exibir branches mescladas
 ```
 git branch --merged
 ```
+
 > #### Exibir branches ainda não mescladas
 ```
 git branch -no-merged
 ```
+
 > #### Mesclar uma branch com a main criando um novo commit de merge
 ```
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
+
 > #### Mesclar uma branch com a main simplificando o histórico com o Rebase
 ```
 git rebase nome_branch_a_mesclar
 ```
+
 > #### Cancelar mesclagem com o rebase
 ```
 git rebase --abort
@@ -315,50 +363,62 @@ git rebase --abort
 ```
 git branch -r
 ```
+
 > #### Exibir branches remotas e locais
 ```
 git branch -a
 ```
+
 > #### Exibir último commit associado as branches remotas
 ```
 git branch -r -v
 ```
+
 > #### Exibir branches remotas e locais com o último commit associado a elas
 ```
 git branch -a -v
 ```
+
 > #### Enviar commits de uma branch local para o repositório remoto
 ```
 git push nome_repositório_remoto nome_branch_local
 ```
+
 > #### Criar branch local a partir de branch remota as associando
 ```
 git checkout -b nome_branch nome_repositório_remoto/nome_branch_remota
 ```
+
 > #### Criar branch local a partir de branch remota as associando (Opção 2)
 ```
 git checkout -t nome_repositório_remoto/nome_branch_remota
 ```
+
 > #### Obter commits de um repositório remoto ainda não presentes no repositório local
 ```
 git fetch nome_repositório_remoto
 ```
+
 > #### Mesclar branches remotas e locais com o commit de merge
 ```
 git merge nome_repositório/nome_branch -m "mensagem"
 ```
+
 > #### Mesclar branches remotas e locais com o rebase
 ```
 git rebase nome_repositório/nome_branch
 ```
+
 > #### Obter commits do repositório remoto e mesclar ao mesmo tempo
 ```
 git pull
 ```
+
 > #### Obter commits do repositório remoto e mesclar ao mesmo tempo simplificando o histórico
 ```
 git pull --rebase
 ```
+
 > #### Apagar branch remota
 ```
 git push nome_repositório	:nome_branch_remota
@@ -402,7 +462,6 @@ git show -s nome_tag
 ```
 git push nome_repositorio nome_tag 
 ```
-<br>
 
 > #### Enviar todas as tags para repositório remoto
 ```
