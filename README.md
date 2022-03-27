@@ -1,5 +1,5 @@
 <div style="display:inline_block">
-    <img align="left" height="100" width="200" alt="MySql" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+    <img align="left" height="110" width="200" alt="MySql" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
 </div>
 
 # Git
@@ -76,35 +76,36 @@ git config --local configuração_desejada
 git config --global configuração_desejada
 ```
 
-## Inicializar controle de versão do git no repositório
+### Inicializar controle de versão do git no repositório
 
-#### Inicializar o Git em um repositório
+> #### Inicializar o git em um repositório
 ```
 git init
 ```  
-#### Criar Repositório e Inicializar o Git 
+> #### Criar repositório inicializando o git 
 ```
 git init nome_repositório
 ```
-## Salvar no Repositório Git
 
-#### Acessar Estado do Arquivo
+### Salvar arquivos no git
+
+> #### Acessar estado do arquivo
 ```
 git status
 ```    
-#### Adicionar um Arquivo para ser Rastreado pelo Git
+> #### Adicionar um arquivo para ser rastreado pelo git
 ```
 git add nome_arquivo
 ```
-#### Adicionar Todos os Arquivos para serem Rastreados pelo Git
+> #### Adicionar todos os arquivos para serem rastreados pelo git
 ```
 git add . 
 ```    
-#### Salvar Arquivos no Git
+> #### Criar versão dos arquivos no git
 ```
 git commit -m "mensagem" 
 ```  
-#### Adicionar e Salvar Arquivos no Git
+> #### Adicionar e salvar arquivos no git
 ```
 git commit -a -m "mensagem" 
 ```
