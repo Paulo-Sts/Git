@@ -110,113 +110,93 @@ git commit -m "mensagem"
 git commit -a -m "mensagem" 
 ```
 
-## Ignorar Arquivos
+### Ignorar arquivos
   Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
   * .gitignore
 
-# Manipulação de Arquivos
+### Histórico de arquivos commitados
 
-## Histórico de Arquivos Commitados
-
-#### Exibir Histórico de Todos os Commits do Repositório
+> #### Exibir histórico de todos os commits do repositório
 ```
 git log
 ```
-
-#### Exibir Histórico de um Arquivo Específico
+> #### Exibir histórico de um arquivo específico
 ```
 git log nome_arquivo 
 ```  
-
-#### Exibir Histórico dos últimos Arquivos do Repositório
+> #### Exibir histórico dos últimos arquivos do repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
-
-#### Exibir Resumo do Histórico de Commits do Repositório
+> #### Exibir resumo do histórico de commits do repositório
 ```
 git log --oneline 
 ```
-
-#### Exibir Resumo das Alterações de Commits 
+> #### Exibir resumo das alterações de commits 
 ```
 git log --stat
 ```
-
-#### Exibir Commit Pai
+> #### Exibir commit pai
 ```
 git log --parents
 ```
-
-#### Exibir Commit que a Branch Master está Apontando
+> #### Exibir commit que a branch master está apontando
 ```
 git log --decorate
 ```
-
-#### Exibir Alterações Detalhadas de Todos os Arquivos
+> #### Exibir alterações detalhadas de todos os arquivos
 ```
 git show 
 ```
-
-#### Exibir Alterações Detalhadas em um Arquivo
+> #### Exibir alterações detalhadas de um commit
 ```
 git show nome_commit 
 ```
 
-## Alterações nos Arquivos
+### Alterações nos arquivos
 Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
-#### Exibir Mudanças não Salvas no Git em Todos os Arquivos
+> #### Exibir mudanças não salvas no git em todos os arquivos
 ```
 git diff 
 ```
-
-#### Exibir Mudanças não Salvas no Git em um Arquivo Específico
+> #### Exibir mudanças não salvas no git em um arquivo específico
 ```
 git diff nome_arquivo 
 ```
-
-#### Exibir Mudanças não Commitadas 
+> #### Exibir mudanças não commitadas 
 ```
 git diff --staged
 ```
-
-#### Comparar dois Commits de um Arquivo
+> #### Comparar dois commits de um arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
-
-#### Apagar Arquivo
+> #### Apagar arquivo
 ```
 git rm nome_arquivo
 ```
-
-#### Renomear Arquivo
+> #### Renomear arquivo
 ```
 git rm nome_arquivo novo_nome_arquivo
 ```
-
-#### Mover Arquivo
+> #### Mover arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
-
-#### Desfazer Alterações ainda não Salvas no Git
+> #### Desfazer alterações ainda não salvas no git
 ```
 git checkout --nome_arquivo
 ```
-
-#### Desfazer Alterações Adicionadas ao Git sem as Apagar
+> #### Desfazer alterações adicionadas ao git sem as apagar
 ```
 git reset --nome_arquivo
 ```
-
-#### Desfazer Alterações Adicionadas ao Git e Apaga-las
+> #### Desfazer alterações adicionadas ao git e apaga-las
 ```
 git reset --hard
 ```
-
-#### Desfazer Alterações Commitadas voltando ao Commit Anterior
+> #### Desfazer alterações commitadas voltando ao commit anterior
 ```
 git revert --no-edit código_do_commit_a_voltar
 ```
