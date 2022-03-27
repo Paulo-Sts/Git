@@ -250,70 +250,59 @@ git pull nome_repositório nome_branch
 > #### Integrar alterações realizadas na cópia com o repositório principal
 * Botão Pull Request (feito no github)
 
-# Branches
+## BRANCHES
 
-## Branch
+### Branch
 É uma linha de desenvolvimento independente em que o código é desenvolvido e commitado sem afetar outras branches.
 
-## Branch Main
+### Branch main
 É a ramificação principal definida por padrão pelo git. Caso não existam outras branches todo o código estará na branch main.
 
-#### Criar Branch
+> #### Criar branch
 ```
 git branch nome_branch
 ```
-
-#### Criar Branch e Mudar para ela
+> #### Criar branch e mudar para ela
 ```
 git checkout -b nome_branch
 ```
-
-#### Exibir Branches Existentes
+> #### Exibir branches existentes
 ```
 git branch
 ```
-
-#### Exibir Branches com o último Commit Associado a ela
+> #### Exibir branches com o último commit associado a ela
 ```
 git branch -v
 ```
-
-#### Trocar de Branch
+> #### Trocar de branch
 ```
 git checkout nome_branch
 ```
-
-#### Apagar Branch
+> #### Apagar branch
 ```
 git branch -d nome_branch
 ```
-
-#### Apagar Branch que tenha Commits não Mesclados com a Master
+> #### Apagar branch que tenha commits não mesclados com a branch main
 ```
 git branch -D nome_branch
 ```
-
-#### Exibir Branches Mescladas
+> #### Exibir branches mescladas
 ```
 git branch --merged
 ```
-
-#### Exibir Branches ainda não Mescladas
+> #### Exibir branches ainda não mescladas
 ```
 git branch -no-merged
 ```
-
-#### Mesclar uma Branch com a Main Criando um novo Commit de Merge
+> #### Mesclar uma branch com a main criando um novo commit de merge
 ```
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
-
-#### Mesclar uma Branch com a Main Simplificando o Histórico com o Rebase
+> #### Mesclar uma branch com a main simplificando o histórico com o Rebase
 ```
 git rebase nome_branch_a_mesclar
 ```
-
-#### Cancelar Mesclagem com o Rebase
+> #### Cancelar mesclagem com o rebase
 ```
 git rebase --abort
 ```
