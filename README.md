@@ -201,52 +201,42 @@ git reset --hard
 git revert --no-edit código_do_commit_a_voltar
 ```
 
-# Repositórios Externos
-
-## Repositório Remoto
+### Repositório remoto
 É responsável por hospedar o versionamento, sendo o ponto de acesso dos usuários locais. Geralmente é usado como repositório central, não sendo acessado diretamente, mas funcionando como backup e repositório de integração do que está sendo trabalhado pelos usuários nos repositórios locais.
 
-#### Criar Repositório Remoto
+> #### Criar repositório remoto
 ```
 git init --bare nome_repositório.git
 ```
-
-#### Adicionar Repositório Remoto
+> #### Adicionar repositório remoto
 ```
 git remote add nome_repositório endereço_repositório
 ```
-
-#### Listar Repositórios Remotos
+> #### Listar repositórios remotos
 ```
 git remote
 ```
-
-#### Listar Repositórios Remotos e seus Endereços
+> #### Listar repositórios remotos e seus endereços
 ```
 git remote -v
 ```
-
-#### Renomear Repositório Remoto
+> #### Renomear repositório remoto
 ```
 git remote rename nome_repositório novo_nome
 ```
-
-#### Alterar o Endereço do Repositório Remoto
+> #### Alterar o endereço do repositório remoto
 ```
 git remote set-url nome_repositório novo_endereço
 ```
-
-#### Enviar Commits para o Repositório Remoto
+> #### Enviar commits para o repositório remoto
 ```
 git push nome_repositório nome_branch
 ```
-
-#### Clonar Repositório Remoto
+> #### Clonar repositório remoto
 ```
 git clone endereço_repositório
 ```
-
-#### Sincronizar Repositório Local com Repositório Remoto
+> #### Sincronizar repositório local com repositório remoto
 ```
 git pull nome_repositório nome_branch
 ```
