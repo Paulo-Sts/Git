@@ -1,69 +1,82 @@
-# Introdução
+<div style="display:inline_block">
+    <img align="left" height="100" width="200" alt="MySql" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+</div>
 
-### Instalação do Git
+# Git
+Conceitos e comandos git para controle de versão.
+
+<br>
+<br>
+
+## INTRODUÇÃO
+
+> #### Instalação do git
 1. Acessar o site do Git e escolher a versão mais atualizada disponível: https://git-scm.com/ 
 2. Após baixar, executar o instalador seguindo as opções padrão.
 
-## Sistema de Controle de Versão
+### Sistema de controle de versão
 É uma ferramenta que registra e guarda as diversas versões de arquivos. Funciona armazenando em um repositório todas as versões do arquivo já existentes, dessa forma é possível
 acompanhar as alterações de versões mais antigas, mesclar e detectar alterações em um mesmo arquivo e identificar conflitos.  
 Para gerenciar as versões de um ou mais arquivos, deve-se informar que o arquivo deve ser rastreado no repositório de controle de versão, assim como ao se realizar uma mudança
 deve-se armazenar essas alterações no repositório de controle de versão.
 
-### Controle de Versão Local
+#### Controle de versão local
 É um sistema que gerencia versões através de um repositório local, armazenado em um único computador.
 
-### Controle de Versão Centralizado
+#### Controle de versão centralizado
 É um sistema que gerencia versões através de um servidor central, esse servidor administra o acesso, mudanças e versões dos arquivos.
 
-### Controle de Versão Distribuído
+#### Controle de versão distribuído
 É um sistema em que cada usuário trabalha com uma cópia dos arquivos localmente, também gerencia as versões de modo independente. Ao mesmo tempo todos os usuários estão integrados ao repositório central externo que interage com as cópias de repositório de cada usuário.
 
-## Git
+### Git
 É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O Git salva uma imagem dos arquivos com suas mudanças em cada versão.
 
-## Estados do Arquivo
+### Estados do arquivo
 
-### Estado Modificado
+> #### Estado modificado
 É o estado inicial do arquivo, quando ele é criado ou modificado se encontrando na área de trabalho. Nesse estado o arquivo ainda não está salvo no git.
 
-### Estado Preparado
+> #### Estado preparado
 Quando um arquivo está pronto para ser salvo. Nesse estado ele é adicionado ao Git.
 
-### Estado Consolidado
+> #### Estado consolidado
 Quando o arquivo é salvo como uma versão. Nesse estado o Git salva uma imagem do arquivo no repositório de gerenciamento de versão local.
 
-# Comandos Iniciais
+## COMANDOS
 
-## Ajuda e Orientações
+### Ajuda e configurações
 
-#### Versão do Git
+> #### Versão do git
 ```
 git --version
 ```
-#### Ajuda do Git
+> #### Ajuda do git
 ```
 git help
 ```
-## Configurações de Usuário
-
-#### Configurar Nome do Usuário
+> #### Configurar nome do usuário
 ```
 git config --global user.name "nome"
 ```
-#### Configurar Email do Usuário
+> #### Configurar email do usuário
 ```
 git config --global user.email "email"
 ```
-#### Configurar Editor de Texto do Usuário
+> #### Configurar editor de texto do usuário
 ```
 git config --global core.editor "editor"
 ```
-#### Acessar Configurações do Usuário
+> #### Definir configurações do usuário de forma local
+```
+git config --local configuração_desejada
+```
+> #### Acessar configurações do usuário
 ```
 git config --global configuração_desejada
 ```
-## Inicializar o Git
+
+## Inicializar controle de versão do git no repositório
 
 #### Inicializar o Git em um repositório
 ```
