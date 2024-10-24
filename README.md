@@ -258,8 +258,7 @@ git commit -a -m "mensagem"
 ```
 
 > ### Ignorar arquivos
-  Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
-  * .gitignore
+  * Cria-se um arquivo com o nome **.gitignore** no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
 
 > ### Histórico de arquivos commitados
 
@@ -423,186 +422,182 @@ git pull nome_repositório nome_branch
 #### Integrar alterações realizadas na cópia com o repositório principal
 * Botão Pull Request (feito no github)
 
-## BRANCHES
+> ### Branch
+* Branch é uma linha de desenvolvimento independente em que o código é desenvolvido e commitado sem afetar outras branches.
+* A branch main é a ramificação principal definida por padrão pelo git.
+* Caso não existam outras branches todo o código estará na branch main.
 
-### Branches
-É uma linha de desenvolvimento independente em que o código é desenvolvido e commitado sem afetar outras branches.
-
-### Branch main
-É a ramificação principal definida por padrão pelo git. Caso não existam outras branches todo o código estará na branch main.
-
-> #### Criar branch
+#### Criar branch
 ```
 git branch nome_branch
 ```
 
-> #### Criar branch e mudar para ela
+#### Criar branch e mudar para ela
 ```
 git checkout -b nome_branch
 ```
 
-> #### Criar branch a partir de outra branch e mudar para ela
+#### Criar branch a partir de outra branch e mudar para ela
 ```
 git checkout -b nome_branch nome_branch_origem
 ```
 
-> #### Exibir branches existentes
+#### Exibir branches existentes
 ```
 git branch
 ```
 
-> #### Exibir branches com o último commit associado a ela
+#### Exibir branches com o último commit associado a ela
 ```
 git branch -v
 ```
 
-> #### Trocar de branch
+#### Trocar de branch
 ```
 git checkout nome_branch
 ```
 
-> #### Apagar branch
+#### Apagar branch
 ```
 git branch -d nome_branch
 ```
 
-> #### Apagar branch que tenha commits não mesclados com a branch main
+#### Apagar branch que tenha commits não mesclados com a branch main
 ```
 git branch -D nome_branch
 ```
 
-> #### Exibir branches mescladas
+#### Exibir branches mescladas
 ```
 git branch --merged
 ```
 
-> #### Exibir branches ainda não mescladas
+#### Exibir branches ainda não mescladas
 ```
 git branch -no-merged
 ```
 
-> #### Mesclar uma branch com a main criando um novo commit de merge
+#### Mesclar uma branch com a main criando um novo commit de merge
 ```
 git merge nome_branch_a_mesclar -m "mensagem"
 ```
 
-> #### Mesclar uma branch com a main simplificando o histórico com o rebase
+#### Mesclar uma branch com a main simplificando o histórico com o rebase
 ```
 git rebase nome_branch_a_mesclar
 ```
 
-> #### Cancelar mesclagem com o rebase
+#### Cancelar mesclagem com o rebase
 ```
 git rebase --abort
 ```
 
-### Branches Remotas
+> ### Branches remotas
 
-> #### Exibir branches remotas
+#### Exibir branches remotas
 ```
 git branch -r
 ```
 
-> #### Exibir branches remotas e locais
+#### Exibir branches remotas e locais
 ```
 git branch -a
 ```
 
-> #### Exibir último commit associado as branches remotas
+#### Exibir último commit associado as branches remotas
 ```
 git branch -r -v
 ```
 
-> #### Exibir branches remotas e locais com o último commit associado a elas
+#### Exibir branches remotas e locais com o último commit associado a elas
 ```
 git branch -a -v
 ```
 
-> #### Enviar commits de uma branch local para o repositório remoto
+#### Enviar commits de uma branch local para o repositório remoto
 ```
 git push nome_repositório_remoto nome_branch_local
 ```
 
-> #### Criar branch local a partir de branch remota as associando
+#### Criar branch local a partir de branch remota as associando
 ```
 git checkout -b nome_branch nome_repositório_remoto/nome_branch_remota
 ```
 
-> #### Criar branch local a partir de branch remota as associando (Opção 2)
+#### Criar branch local a partir de branch remota as associando (Opção 2)
 ```
 git checkout -t nome_repositório_remoto/nome_branch_remota
 ```
 
-> #### Obter commits de um repositório remoto ainda não presentes no repositório local
+#### Obter commits de um repositório remoto ainda não presentes no repositório local
 ```
 git fetch nome_repositório_remoto
 ```
 
-> #### Mesclar branches remotas e locais com o commit de merge
+#### Mesclar branches remotas e locais com o commit de merge
 ```
 git merge nome_repositório/nome_branch -m "mensagem"
 ```
 
-> #### Mesclar branches remotas e locais com o rebase
+#### Mesclar branches remotas e locais com o rebase
 ```
 git rebase nome_repositório/nome_branch
 ```
 
-> #### Obter commits do repositório remoto e mesclar ao mesmo tempo
+#### Obter commits do repositório remoto e mesclar ao mesmo tempo
 ```
 git pull
 ```
 
-> #### Obter commits do repositório remoto e mesclar ao mesmo tempo simplificando o histórico
+#### Obter commits do repositório remoto e mesclar ao mesmo tempo simplificando o histórico
 ```
 git pull --rebase
 ```
 
-> #### Apagar branch remota
+#### Apagar branch remota
 ```
 git push nome_repositório :nome_branch_remota
 ```
 
-## TAGS
-As tags são apontadores fixos de commits e trabalham "tirando uma foto" do código atual do repositório para dessa forma indicar e identificar uma versão. Elas possuem um nome
-que define qual versão a tag está apontando.
+> ### Tags
+* As tags são apontadores fixos de commits e trabalham "tirando uma foto" do código atual do repositório para dessa forma indicar e identificar uma versão. Elas possuem um nome que define qual versão a tag está apontando.
 
-> #### Criar tag
+#### Criar tag
 ```
 git tag nome_tag
 ```
 
-> #### Exibir tags
+#### Exibir tags
 ```
 git tag 
 ```
 
-> #### Criar tag de um commit anterior
+#### Criar tag de um commit anterior
 ```
 git tag nome_tag número_commit
 ```
 
-> #### Apagar tag 
+#### Apagar tag 
 ```
 git tag -d nome_tag 
 ```
 
-> #### Criar tag anotada
+#### Criar tag anotada
 ```
 git tag -a nome_tag -m "mensagem" 
 ```
 
-> #### Exibir tags anotadas
+#### Exibir tags anotadas
 ```
 git show -s nome_tag 
 ```
 
-> #### Enviar tag para repositório remoto
+#### Enviar tag para repositório remoto
 ```
 git push nome_repositorio nome_tag 
 ```
 
-> #### Enviar todas as tags para repositório remoto
+#### Enviar todas as tags para repositório remoto
 ```
 git push nome_repositorio --tags 
 ```
