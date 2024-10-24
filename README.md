@@ -2,46 +2,49 @@
     <img align="left" height="110" width="200" alt="MySql" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
 </div>
 
-# Git
+### Git
 Conceitos e comandos git para controle de versão.
 
 <br>
+
+> ### Referências
+* [Instalação](https://git-scm.com/) 
+* [Pro Git](https://git-scm.com/book/en/v2)
+
 <br>
 
-## INTRODUÇÃO
+## CONCEITOS
 
-> #### Instalação do git
-1. Acessar o site do Git e escolher a versão mais atualizada disponível: https://git-scm.com/ 
-2. Após baixar, executar o instalador seguindo as opções padrão.
-
-### Sistema de controle de versão
-É uma ferramenta que registra e guarda as diversas versões de arquivos. Funciona armazenando em um repositório todas as versões do arquivo já existentes, dessa forma é possível
+> ### Sistema de controle de versão
+* É uma ferramenta que registra e guarda as diversas versões de arquivos. Funciona armazenando em um repositório todas as versões do arquivo já existentes, dessa forma é possível
 acompanhar as alterações de versões mais antigas, mesclar e detectar alterações em um mesmo arquivo e identificar conflitos.  
-Para gerenciar as versões de um ou mais arquivos, deve-se informar que o arquivo deve ser rastreado no repositório de controle de versão, assim como ao se realizar uma mudança
+* Para gerenciar as versões de um ou mais arquivos, deve-se informar que o arquivo deve ser rastreado no repositório de controle de versão, assim como ao se realizar uma mudança
 deve-se armazenar essas alterações no repositório de controle de versão.
 
 #### Controle de versão local
-É um sistema que gerencia versões através de um repositório local, armazenado em um único computador.
+* É um sistema que gerencia versões através de um repositório local, armazenado em um único computador.
 
 #### Controle de versão centralizado
-É um sistema que gerencia versões através de um servidor central, esse servidor administra o acesso, mudanças e versões dos arquivos.
+* É um sistema que gerencia versões através de um servidor central, esse servidor administra o acesso, mudanças e versões dos arquivos.
 
 #### Controle de versão distribuído
-É um sistema em que cada usuário trabalha com uma cópia dos arquivos localmente, também gerencia as versões de modo independente. Ao mesmo tempo todos os usuários estão integrados ao repositório central externo que interage com as cópias de repositório de cada usuário.
+* É um sistema em que cada usuário trabalha com uma cópia dos arquivos localmente, também gerencia as versões de modo independente. Ao mesmo tempo todos os usuários estão integrados ao repositório central externo que interage com as cópias de repositório de cada usuário.
 
-### Git
-É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O Git salva uma imagem dos arquivos com suas mudanças em cada versão.
+> ### Git
+* É um sistema de controle de versão distribuído, que gerencia as versões através do fluxo de estados dos arquivos. O Git salva uma imagem dos arquivos com suas mudanças em cada versão.
 
-### Estados do arquivo
+> ### Estados do arquivo
 
-> #### Estado modificado
-É o estado inicial do arquivo, quando ele é criado ou modificado se encontrando na área de trabalho. Nesse estado o arquivo ainda não está salvo no git.
+#### Estado modificado
+* É o estado inicial do arquivo, quando ele é criado ou modificado se encontrando na área de trabalho. Nesse estado o arquivo ainda não está salvo no git.
 
-> #### Estado preparado
-Quando um arquivo está pronto para ser salvo. Nesse estado ele é adicionado ao Git.
+#### Estado preparado
+* Quando um arquivo está pronto para ser salvo. Nesse estado ele é adicionado ao Git.
 
-> #### Estado consolidado
-Quando o arquivo é salvo como uma versão. Nesse estado o Git salva uma imagem do arquivo no repositório de gerenciamento de versão local.
+#### Estado consolidado
+* Quando o arquivo é salvo como uma versão. Nesse estado o Git salva uma imagem do arquivo no repositório de gerenciamento de versão local.
+
+<br>
 
 ## COMANDOS
 
