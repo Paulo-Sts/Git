@@ -7,7 +7,7 @@ Conceitos e comandos git para controle de versão.
 
 <br>
 
-> ### Referências
+#### Referências
 * [Instalação](https://git-scm.com/) 
 * [Pro Git](https://git-scm.com/book/en/v2)
 
