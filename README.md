@@ -154,7 +154,7 @@ deve-se armazenar essas alterações no repositório de controle de versão.
 6. Enviar para o repositório remoto;
 7. Solicitar pull request.
 
-### Organizando grandes projetos open source com um ditador e tenentes
+> ### Organizando grandes projetos open source com um ditador e tenentes
 * Existe um mantenedor principal chamado ditador que tem a última palavra quando a incorporação de uma nova funcionalidade.  
 * Esse ditador define um conjunto de colaboradores chamados tenentes que possuem uma cópia do repositório original com o fork focados no desenvolvimento de um módulo específico.    
 * A partir desses módulos colaboradores podem fazer contribuições obtendo uma cópia desse módulo, o baixando para o seu repositório local, definindo uma branch desenvolvimento ou por funcionalidade e trabalhando no projeto.       
@@ -181,253 +181,251 @@ deve-se armazenar essas alterações no repositório de controle de versão.
 
 ## COMANDOS
 
-### Ajuda e configurações
+> ### Ajuda e configurações
 
-> #### Versão do git
+#### Versão do git
 ```
 git --version
 ```
 
-> #### Ajuda do git
+#### Ajuda do git
 ```
 git help
 ```
 
-> #### Configurar nome do usuário
+#### Configurar nome do usuário
 ```
 git config --global user.name "nome"
 ```
 
-> #### Configurar email do usuário
+#### Configurar email do usuário
 ```
 git config --global user.email "email"
 ```
 
-> #### Configurar editor de texto do usuário
+#### Configurar editor de texto do usuário
 ```
 git config --global core.editor "editor"
 ```
 
-> #### Definir configurações do usuário de forma local
+#### Definir configurações do usuário de forma local
 ```
 git config --local configuração_desejada
 ```
 
-> #### Acessar configurações do usuário
+#### Acessar configurações do usuário
 ```
 git config --global configuração_desejada
 ```
 
-### Inicializar controle de versão do git no repositório
+> ### Inicializar controle de versão do git no repositório
 
-> #### Inicializar o git em um repositório
+#### Inicializar o git em um repositório
 ```
 git init
 ```  
 
-> #### Criar repositório inicializando o git 
+#### Criar repositório inicializando o git 
 ```
 git init nome_repositório
 ```
 
-### Salvar arquivos no git
+> ### Salvar arquivos no git
 
-> #### Acessar estado do arquivo
+#### Acessar estado do arquivo
 ```
 git status
 ```   
  
-> #### Adicionar um arquivo para ser rastreado pelo git
+#### Adicionar um arquivo para ser rastreado pelo git
 ```
 git add nome_arquivo
 ```
 
-> #### Adicionar todos os arquivos para serem rastreados pelo git
+#### Adicionar todos os arquivos para serem rastreados pelo git
 ```
 git add . 
 ```
 
-> #### Criar versão dos arquivos no git
+#### Criar versão dos arquivos no git
 ```
 git commit -m "mensagem" 
 ```
 
-> #### Adicionar e salvar arquivos no git
+#### Adicionar e salvar arquivos no git
 ```
 git commit -a -m "mensagem" 
 ```
 
-### Ignorar arquivos
+> ### Ignorar arquivos
   Cria-se um arquivo com o nome .gitignore no diretório principal do projeto, com os nomes dos arquivos e pastas a serem ignorados pelo controle de versão do git. Esse arquivo deve ser salvo no git.
   * .gitignore
 
-### Histórico de arquivos commitados
+> ### Histórico de arquivos commitados
 
-> #### Exibir histórico de todos os commits do repositório
+#### Exibir histórico de todos os commits do repositório
 ```
 git log
 ```
 
-> #### Exibir histórico de commits um arquivo específico
+#### Exibir histórico de commits um arquivo específico
 ```
 git log nome_arquivo 
 ```
 
-> #### Exibir histórico de commits dos últimos arquivos do repositório
+#### Exibir histórico de commits dos últimos arquivos do repositório
 ```
 git log -n numero_de_commits_a_mostrar
 ```
 
-> #### Exibir resumo do histórico de commits do repositório
+#### Exibir resumo do histórico de commits do repositório
 ```
 git log --oneline 
 ```
 
-> #### Exibir resumo das alterações de commits 
+#### Exibir resumo das alterações de commits 
 ```
 git log --stat
 ```
 
-> #### Exibir commit pai
+#### Exibir commit pai
 ```
 git log --parents
 ```
 
-> #### Exibir commit que a branch main está apontando
+#### Exibir commit que a branch main está apontando
 ```
 git log --decorate
 ```
 
-> #### Exibir alterações detalhadas de todos os arquivos
+#### Exibir alterações detalhadas de todos os arquivos
 ```
 git show 
 ```
 
-> #### Exibir alterações detalhadas de um commit
+#### Exibir alterações detalhadas de um commit
 ```
 git show nome_commit 
 ```
 
-### Alterações nos arquivos
-Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
+> ### Alterações nos arquivos
+* Podemos verificar alterações feitas em arquivos que estamos trabalhando e as comparar com versões que já estão salvas.
 
-> #### Exibir mudanças não salvas no git em todos os arquivos
+#### Exibir mudanças não salvas no git em todos os arquivos
 ```
 git diff 
 ```
 
-> #### Exibir mudanças não salvas no git em um arquivo específico
+#### Exibir mudanças não salvas no git em um arquivo específico
 ```
 git diff nome_arquivo 
 ```
 
-> #### Exibir mudanças não commitadas 
+#### Exibir mudanças não commitadas 
 ```
 git diff --staged
 ```
 
-> #### Comparar dois commits de um arquivo
+#### Comparar dois commits de um arquivo
 ```
 git diff numero_commit_1 : numero_commit_2
 ```
 
-> #### Apagar arquivo
+#### Apagar arquivo
 ```
 git rm nome_arquivo
 ```
 
-> #### Renomear arquivo
+#### Renomear arquivo
 ```
 git rm nome_arquivo novo_nome_arquivo
 ```
 
-> #### Mover arquivo
+#### Mover arquivo
 ```
 git mv nome_arquivo nome_pasta/nome_arquivo
 ```
 
-> #### Desfazer alterações ainda não salvas no git
+#### Desfazer alterações ainda não salvas no git
 ```
 git checkout --nome_arquivo
 ```
 
-> #### Desfazer alterações adicionadas ao git sem as apagar
+#### Desfazer alterações adicionadas ao git sem as apagar
 ```
 git reset --nome_arquivo
 ```
 
-> #### Desfazer alterações adicionadas ao git e apaga-las
+#### Desfazer alterações adicionadas ao git e apaga-las
 ```
 git reset --hard
 ```
 
-> #### Desfazer alterações commitadas voltando ao commit anterior
+#### Desfazer alterações commitadas voltando ao commit anterior
 ```
 git revert --no-edit código_do_commit_a_voltar
 ```
 
-## REPOSITÓRIOS EXTERNOS
+> ### Repositório remoto
+* É responsável por hospedar o versionamento, sendo o ponto de acesso dos usuários locais. Geralmente é usado como repositório central, não sendo acessado diretamente, mas funcionando como backup e repositório de integração do que está sendo trabalhado pelos usuários nos repositórios locais.
 
-### Repositório remoto
-É responsável por hospedar o versionamento, sendo o ponto de acesso dos usuários locais. Geralmente é usado como repositório central, não sendo acessado diretamente, mas funcionando como backup e repositório de integração do que está sendo trabalhado pelos usuários nos repositórios locais.
-
-> #### Criar repositório remoto
+#### Criar repositório remoto
 ```
 git init --bare nome_repositório.git
 ```
 
-> #### Adicionar repositório remoto
+#### Adicionar repositório remoto
 ```
 git remote add nome_repositório endereço_repositório
 ```
 
-> #### Listar repositórios remotos
+#### Listar repositórios remotos
 ```
 git remote
 ```
 
-> #### Listar repositórios remotos e seus endereços
+#### Listar repositórios remotos e seus endereços
 ```
 git remote -v
 ```
 
-> #### Renomear repositório remoto
+#### Renomear repositório remoto
 ```
 git remote rename nome_repositório novo_nome
 ```
 
-> #### Alterar o endereço do repositório remoto
+#### Alterar o endereço do repositório remoto
 ```
 git remote set-url nome_repositório novo_endereço
 ```
 
-> #### Enviar commits para o repositório remoto
+#### Enviar commits para o repositório remoto
 ```
 git push nome_repositório nome_branch
 ```
 
-> #### Clonar repositório remoto
+#### Clonar repositório remoto
 ```
 git clone endereço_repositório
 ```
 
-> #### Sincronizar repositório local com repositório remoto
+#### Sincronizar repositório local com repositório remoto
 ```
 git pull nome_repositório nome_branch
 ```
 
-## GITHUB
-É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
+> ### Github
+* É uma aplicação web para hospedagem e compartilhamento de código que utiliza o git como sistema de controle de versão. Funciona também como uma rede social colaborativa entre programadores em projetos open-source.
 
-> #### Copiar repositório de outro usuário para o nosso usuário
+#### Copiar repositório de outro usuário para o nosso usuário
 * Botão Fork (feito no github)
 
-> #### Integrar alterações realizadas na cópia com o repositório principal
+#### Integrar alterações realizadas na cópia com o repositório principal
 * Botão Pull Request (feito no github)
 
 ## BRANCHES
 
-### Branch
+### Branches
 É uma linha de desenvolvimento independente em que o código é desenvolvido e commitado sem afetar outras branches.
 
 ### Branch main
