@@ -1,9 +1,9 @@
 <div style="display:inline_block">
-    <img align="left" height="110" width="200" alt="MySql" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+    <img align="left" height="110" width="200" alt="Git" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
 </div>
 
 ### Git
-Conceitos e comandos git para controle de versão.
+* Conceitos e comandos git para controle de versão.
 
 <br>
 
