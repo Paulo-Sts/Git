@@ -3,7 +3,7 @@
 </div>
 
 ### Git
-* Conceitos e comandos git para controle de versão.
+Conceitos e comandos git para controle de versão.
 
 <br>
 
